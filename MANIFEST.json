@@ -1,0 +1,727 @@
+{
+  "schema_version": 1,
+  "dependency": {
+    "repository": "https://github.com/tavisrudd/finitegeom",
+    "commit": "ef6317c5e1a348a91a1928104f9c8e1831bfb03d"
+  },
+  "module_count": 118,
+  "roots": [
+    "RelativeConicArcs.Gates.ClebschRigidityTrust"
+  ],
+  "sources": [
+    {
+      "bytes": 3532,
+      "module": "RelativeConicArcs.Gates.ClebschRigidityTrust",
+      "path": "RelativeConicArcs/Gates/ClebschRigidityTrust.lean",
+      "sha256": "45056ea72f225ce373d774ed274f4d0216b38c21fb57c26dfc5c84b0a2ef413b"
+    },
+    {
+      "bytes": 28890,
+      "module": "RelativeConicArcs.Q11A5PointOrbits",
+      "path": "RelativeConicArcs/Q11A5PointOrbits.lean",
+      "sha256": "d1bf97cf47c9c0b23f0fe73f049e3f7e42e50137b6d28e59f3954cbe779dfa0b"
+    },
+    {
+      "bytes": 3603,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsArithmetic",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsArithmetic.lean",
+      "sha256": "0e3f52b72c5794425142e9831f4942b76275dc53d5777a7b650e6265afccf59d"
+    },
+    {
+      "bytes": 740,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsBasic",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsBasic.lean",
+      "sha256": "e1a4abe2d37c5157724f98d185f86aaef0c676fc33f20956cf056cf76efbd667"
+    },
+    {
+      "bytes": 795,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsBrianchon",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsBrianchon.lean",
+      "sha256": "3e07b6a5aa56d3b45399b7784f541bbf0785b021d835112a266ebce3c1494cd1"
+    },
+    {
+      "bytes": 600,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsConic",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsConic.lean",
+      "sha256": "6941bbfa772edf6e6011270f87b63ed29f5c130da31c21eea3037bd4b4bc5fa0"
+    },
+    {
+      "bytes": 11541,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsData",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsData.lean",
+      "sha256": "761374c18d38e02e2abf71f648e9cf603ab2f7c3f8d90bc884178c5c0fbbf005"
+    },
+    {
+      "bytes": 4680,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsFixed00",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsFixed00.lean",
+      "sha256": "6130c32e7c6f060a40770bdbd0e72b0e6483c76ffa6b26b937f968b371274d75"
+    },
+    {
+      "bytes": 4711,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsFixed01",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsFixed01.lean",
+      "sha256": "00cac8ae3717a170392b508a28d81397f4b4fa88f91627a84b9f317a7b5d582b"
+    },
+    {
+      "bytes": 4711,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsFixed02",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsFixed02.lean",
+      "sha256": "6b3eb7a8ccc2d412b6b62f1a118e3a113ebe4d66ef591524199f927708ae0f30"
+    },
+    {
+      "bytes": 4711,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsFixed03",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsFixed03.lean",
+      "sha256": "f605603482dc92e81f7152264b19d8e86c34f07ffbafb9f11023301e5d6532bc"
+    },
+    {
+      "bytes": 4711,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsFixed04",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsFixed04.lean",
+      "sha256": "7523cf1c07fabf9eea1ad162f93448ef6fa0c7f496ea3f8d164b7bf7c6a57573"
+    },
+    {
+      "bytes": 4754,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsFixed05",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsFixed05.lean",
+      "sha256": "c238ebc72273f1971b647f009f140c54e5c406adc77852a1b416224948a88b5e"
+    },
+    {
+      "bytes": 4770,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsFixed06",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsFixed06.lean",
+      "sha256": "7be816adca142fdeb75763920b80619fc1968c0a81330e891a6a8b0a972c3a40"
+    },
+    {
+      "bytes": 491,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsFixedFast",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsFixedFast.lean",
+      "sha256": "31e570d2af84c4b8ceff9af73b0615c64ec941286ab3fff49d8f6891936063ec"
+    },
+    {
+      "bytes": 1224,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsMatrix00",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsMatrix00.lean",
+      "sha256": "c712f74b1faeb59cbe55b78e198e72a106b44a948cdcdefd061819dc75687079"
+    },
+    {
+      "bytes": 1224,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsMatrix01",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsMatrix01.lean",
+      "sha256": "71b9cedcce78c4d5d7e4c56f1c16c0c822415900dd3d3a922bb5fa1516e06c0a"
+    },
+    {
+      "bytes": 1246,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsMatrix02",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsMatrix02.lean",
+      "sha256": "c31ac705c6ada8db691af950c3c05df5a6c44f0192f4449333f01a594f62fe75"
+    },
+    {
+      "bytes": 1246,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsMatrix03",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsMatrix03.lean",
+      "sha256": "0e76d622784de7bb0f3a4c2049c6ac59013fc588e52759920b5a2245a4a19f0a"
+    },
+    {
+      "bytes": 1246,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsMatrix04",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsMatrix04.lean",
+      "sha256": "f7a1ebb395f5b4c323a88f714c74c5b26df17d8f54b8dedc2a88e4d92c3f7bf4"
+    },
+    {
+      "bytes": 1246,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsMatrix05",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsMatrix05.lean",
+      "sha256": "1505b5e900de73fb22eda0025493e3da9883c0604a0c94b804bb386af7a78f30"
+    },
+    {
+      "bytes": 1246,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsMatrix06",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsMatrix06.lean",
+      "sha256": "2b776418d7a00518cf5b21427f5e5d9eea4f127688c3220dd2baf242af675171"
+    },
+    {
+      "bytes": 1246,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsMatrix07",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsMatrix07.lean",
+      "sha256": "1d3e454f030485e13fa2355cc3b869af1846cb45058d7576247600bb46515357"
+    },
+    {
+      "bytes": 1246,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsMatrix08",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsMatrix08.lean",
+      "sha256": "dedd2b902c1e35dbf2129ab1c258b37b8f7480d93436769411d94b6aa3d3070a"
+    },
+    {
+      "bytes": 1246,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsMatrix09",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsMatrix09.lean",
+      "sha256": "6ebaabcab3ae70aef249e637f0d947fdbc7be8f159b89b0d772f9037d26b43a1"
+    },
+    {
+      "bytes": 1246,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsMatrix10",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsMatrix10.lean",
+      "sha256": "0bfab4c9cccc4b6d2a8802dffd9c429f04673a79592a720b12bb0f17108d76cf"
+    },
+    {
+      "bytes": 1246,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsMatrix11",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsMatrix11.lean",
+      "sha256": "bd1c76b59ecfcdf46e84fd64eefbe9ac3f78e2f70b22e76ea1ac3bf9c62b9358"
+    },
+    {
+      "bytes": 1408,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsPartition",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsPartition.lean",
+      "sha256": "43477142ae11e8da4655383d3abb0261eef48338a3d3063c10e9fe996e287890"
+    },
+    {
+      "bytes": 1836,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRepresentatives",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRepresentatives.lean",
+      "sha256": "1615af97ad8f74f20297bc35be5404af8050ebe5eb5bb968a743e2c5fcfaef17"
+    },
+    {
+      "bytes": 494,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRows00",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRows00.lean",
+      "sha256": "a25f4146c0f9cfb447b1a7a25a81f10ab4013d9f2764ab218429bb0519321688"
+    },
+    {
+      "bytes": 465,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRows01",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRows01.lean",
+      "sha256": "6e4ff0441acdc365d3fba60bb2bef6033e08eed717c5996ce0c983c12d0509c4"
+    },
+    {
+      "bytes": 467,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRows02",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRows02.lean",
+      "sha256": "1afc0b2d665d4162be09cd29a3715cef8d5a97b837fba5ff4c389869ba4650fb"
+    },
+    {
+      "bytes": 467,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRows03",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRows03.lean",
+      "sha256": "cc881984f0b78ecf8c6c9b3713668d0a0ef812b86b5215409aeece54deeaeead"
+    },
+    {
+      "bytes": 467,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRows04",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRows04.lean",
+      "sha256": "f92de758092527cc0b4d7a6582d7819fab9eb2530a1eb7200ba19be5ed892f14"
+    },
+    {
+      "bytes": 467,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRows05",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRows05.lean",
+      "sha256": "08821a239217099ca960c0d561cb227088f10c60484827fabb1fbcf38d3eb37d"
+    },
+    {
+      "bytes": 467,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRows06",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRows06.lean",
+      "sha256": "29e7c60f8f71f47c8c44a0ed3fa3670f414570939a33619ef5a1fe9b2983c7a4"
+    },
+    {
+      "bytes": 467,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRows07",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRows07.lean",
+      "sha256": "5d5656b73abe555b3b2474b136a8e0984da9d24505903242c980cf37fd651ee7"
+    },
+    {
+      "bytes": 467,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRows08",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRows08.lean",
+      "sha256": "d76cff4fedc4f0e51b3db897a8475a20feafe4a6fbf1849ecbd87f150eacaa57"
+    },
+    {
+      "bytes": 467,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRows09",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRows09.lean",
+      "sha256": "454360db41afc93b3eadaeda476652714d4f40a7ba754e6d76879fe3cfee43bd"
+    },
+    {
+      "bytes": 467,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRows10",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRows10.lean",
+      "sha256": "128bae9b6bb70975e3603fb641e7d814882a1305b349da79818b782edc03ded8"
+    },
+    {
+      "bytes": 467,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRows11",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRows11.lean",
+      "sha256": "54051d5dae1315cb66b34ac0aa2afbb542d9fe7ef9366bbec3e182b510b8642b"
+    },
+    {
+      "bytes": 1835,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG00",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG00.lean",
+      "sha256": "19f85f0ab5b7b6b59063f4dcbbbb497b4091f14d2d0df92e654ed69c83c7c8d3"
+    },
+    {
+      "bytes": 1835,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG01",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG01.lean",
+      "sha256": "3da59464e89b8ee2295e4d9a3bf746ef32ee37f14239102c0356dbef64f6ba23"
+    },
+    {
+      "bytes": 1835,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG02",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG02.lean",
+      "sha256": "bca204eda3ffb26aa1c0dae3207b5f99326b9efd86ea9551c5eca23258522bdf"
+    },
+    {
+      "bytes": 1835,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG03",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG03.lean",
+      "sha256": "49d6a0191e615663c0a8182ab5c134b91b12631ac070f0d33a2cc04f86f1fa10"
+    },
+    {
+      "bytes": 1835,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG04",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG04.lean",
+      "sha256": "8cd65a4ffd8afff8d898707af51cbd79b55e101c763baec0af97d1a1e231d430"
+    },
+    {
+      "bytes": 1734,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG05",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG05.lean",
+      "sha256": "feab0edbf5d7bbb12d89aaddd43adc2f179e8227546d3a8d23879ba0c560cb5d"
+    },
+    {
+      "bytes": 1734,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG06",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG06.lean",
+      "sha256": "9aa85ff587b0ece3c50aac927d7ffbe06e571afde2f6aef140f75b89bf8fdff6"
+    },
+    {
+      "bytes": 1734,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG07",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG07.lean",
+      "sha256": "d100d1670346bfd294cb3ce463ea2f40864d368ad246036dd2230c76fb25ff77"
+    },
+    {
+      "bytes": 1734,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG08",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG08.lean",
+      "sha256": "695a29a3a6a161693d01b883c8acb4b68f9864be17fd15088185910c4709b7c3"
+    },
+    {
+      "bytes": 1734,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG09",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG09.lean",
+      "sha256": "b0718ddc396fe11dcda965da982a619b10c07cad8f9e8ab9a38c3fee8cdc8699"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG10",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG10.lean",
+      "sha256": "9339664658e388e0fe9d811b36cb1914e50e3c50717cd3321fe9b80950e87dd3"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG11",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG11.lean",
+      "sha256": "a6774a8f06f1d3d76ff99a7745a98555a9bd72020d61f80e3f1458ef5c2fb4ef"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG12",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG12.lean",
+      "sha256": "0cf896a35bb7f1dff393783883b2e1369b3562b34770fa842fdfafcba61e32aa"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG13",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG13.lean",
+      "sha256": "dec674e4a8fcf20737c5c0d84cef9cd635579190be123b512b6676743c302af7"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG14",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG14.lean",
+      "sha256": "a3c579a6deacdf6dfc6235b697665749a4d1fa0daa485710e71c0a67f2fd6233"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG15",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG15.lean",
+      "sha256": "ccf68403ad876b1ffada06afed261ccc7abf70da92cc001b19f637d8472f7688"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG16",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG16.lean",
+      "sha256": "f4be7ac53b19f486c15a717f1f7303825899dd8b6479bf58ad52bed6ccd55baa"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG17",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG17.lean",
+      "sha256": "69dec426018fd37ed923d71efa4dc98c59de09820569f6b3dc4ad52d341c215f"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG18",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG18.lean",
+      "sha256": "224c795773c8ba9a002dd1209fc8f64211688a54415aa2adcebeb5f9eee3caaf"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG19",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG19.lean",
+      "sha256": "95b7511d33623e24884427a18859a5310b1246309bc1057e070457bdb1dfdda3"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG20",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG20.lean",
+      "sha256": "8cd2f00b34f5a80988bafdb7cfb0bdd75839849edc6bc26af3ad2933597a35e7"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG21",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG21.lean",
+      "sha256": "53ccf68f64495152eb92b165555804fc9da3aee784e4005353ae5ab2248d5586"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG22",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG22.lean",
+      "sha256": "1cbd1ff09692620f4aa519cd967859b784bfb67a1c70e9020fa3832d09b909c2"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG23",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG23.lean",
+      "sha256": "4e7f67a2205e045b02d8b4d10632f8a2fc648b72cf198124c792d8d8f1729213"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG24",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG24.lean",
+      "sha256": "f45015dd6d9149e458be4128cf77dbf6c1ab4f80439ff935efa58bdf5f57b02e"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG25",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG25.lean",
+      "sha256": "4c5252804ab346f51e02de973f2835f0b9dbeb6e3212fb4446f3a82b4c533d5a"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG26",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG26.lean",
+      "sha256": "1497c0e0cf404d62250127169befc2c82cfadbf7e1e709098c16a533a5a98972"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG27",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG27.lean",
+      "sha256": "7434b5edc7e484afdbcbdb8785addd92bc24da2a20f3cf0bb2c28fb3656da076"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG28",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG28.lean",
+      "sha256": "044156e688335489c5e985db6a6dc4a51b5c5be71ac40396dea6e66a387f29d5"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG29",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG29.lean",
+      "sha256": "5e0c89dc9006a00f4e8cda9e8d787983e5b6fa7c166712b673e407b875228d4e"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG30",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG30.lean",
+      "sha256": "296d33a5d1c6264f7bde7461532a964f529ae1ad9a96597a2c381202262c3795"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG31",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG31.lean",
+      "sha256": "6c5e5af1c8e826b139e30722e80203857bc795f01bbb9fec7614bb120843810c"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG32",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG32.lean",
+      "sha256": "95c591083e8e7591253dce5f4aba73ff462b647235f29152dfd56193f612e83e"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG33",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG33.lean",
+      "sha256": "4bfb0eb605df0d763eb5570cc42ab8df33ecf6ad235e46ef4b8be42779b9f4c8"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG34",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG34.lean",
+      "sha256": "80398699d7ece54f4f7ada4c022ee66e1a5b9a60dab001ecaec5694728dc0a7c"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG35",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG35.lean",
+      "sha256": "82ba5bf99454c5c92302f46a78a18cd35e5f4cc304ba8c199f844cc366b8bef6"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG36",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG36.lean",
+      "sha256": "a280d4482177d889d59be5154c60437f6aba2b24ab38e9387c5799323265736d"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG37",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG37.lean",
+      "sha256": "82e7f9cffd24d006f2ba8084ab09f9e9ddc53df8d1b05c44d47beca1a531f3a7"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG38",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG38.lean",
+      "sha256": "298773e7b9dc579d55193df51cb2cb64b6791e36237afe1d307c57c10e0de1eb"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG39",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG39.lean",
+      "sha256": "b215aae8a9e463b7931fb8523f4bb0cf905b95701d95d1d3015f9e610c8e336b"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG40",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG40.lean",
+      "sha256": "7bf120f2df59ea7d3b07cf18c2ce6699d498421e35f5505228bc2fca5f9e6dab"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG41",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG41.lean",
+      "sha256": "763390a79129304ea0d7f028d2a2b33582115c39fbc6aeac232819edb3317fcd"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG42",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG42.lean",
+      "sha256": "40e7456764ed74bdd44ea2f2322488309d21e90913d4830e8f51a208e54ca893"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG43",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG43.lean",
+      "sha256": "6abe8c8d3a0f9392de0c4b94659d28a6cc30222798aff33db9eda4d650be35c6"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG44",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG44.lean",
+      "sha256": "29f50b4fb3e2c254241ab25e3d92eb61a9287cc0ae8539c768ab28ff4449a422"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG45",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG45.lean",
+      "sha256": "f7320b2c67e72422a3fe9a7fdef34e014c39d29e2ae1b83b9dd51442343bb0d9"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG46",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG46.lean",
+      "sha256": "2c54682fdc88ed6b5efbe039badca7b63cf35f22d052e2cc73ce89d1e35ac9eb"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG47",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG47.lean",
+      "sha256": "06cbca5f58c8642cc7cc4d4f06538048a511f1d08baee9c8591638e0d902fa24"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG48",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG48.lean",
+      "sha256": "a6faed062d6d7c2987f34aaa6f9de179d7260164814a9563ea6dcee60fe0504c"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG49",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG49.lean",
+      "sha256": "58952bd935e19732963d56109fe5f9379978cbee8cb0d00eb67fc0b137e7d4d7"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG50",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG50.lean",
+      "sha256": "972e79eb84fcc67e646687a08133c1a4aeb17fe3a64832b6de48120ab781e2a6"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG51",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG51.lean",
+      "sha256": "0f428d976a5573aab1574275afc0f0d52e81e892d82f5e18ecc69415c08490d1"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG52",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG52.lean",
+      "sha256": "0f0b0e58aa388e61bbbb88f08d5048e3922c5b2cad6d04dc5efb3c6f89c12dd7"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG53",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG53.lean",
+      "sha256": "59e6d42ed289de133e863a289341867a83498b4191620e9dd876036446302dae"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG54",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG54.lean",
+      "sha256": "929a6f4c5407d36b3e04e516e84521829db634b2171a2815ee855b38c70897ec"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG55",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG55.lean",
+      "sha256": "abe98dfdcfa32ac3059911234bb3824d985184a790cc270303bbe34a397934bc"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG56",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG56.lean",
+      "sha256": "163f0408952774acc59628784422e694cf18a3988d2b606b7bdaf837c3cf0d7f"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG57",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG57.lean",
+      "sha256": "2448afa1633b16d2f0390eae9565ca7750ca4046d17bd96b262c1bedfcd2c188"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG58",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG58.lean",
+      "sha256": "849472f208d1af0c73edb39a375361c0789abde1bcf6b9cc5ea843ca692c25b8"
+    },
+    {
+      "bytes": 1748,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG59",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG59.lean",
+      "sha256": "6a7a1fbd44d938c040991428207ccf620cd5ad75a24fba90e348b4b041bbbd8d"
+    },
+    {
+      "bytes": 2377,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsSupport00",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsSupport00.lean",
+      "sha256": "0651b1b9589385c4767267356c402f06095c9bdfa0960a3aadc510d61bf6a578"
+    },
+    {
+      "bytes": 2377,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsSupport01",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsSupport01.lean",
+      "sha256": "ccb11577593c51fba08d5d1d223af9cfee661c680b369eaec9ab7b470b442053"
+    },
+    {
+      "bytes": 2414,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsSupport02",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsSupport02.lean",
+      "sha256": "1ff73535273eccbd2fd363cd1c5f7c57a53ead6e0742bf4ebe5c7db09d1e8cd9"
+    },
+    {
+      "bytes": 2414,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsSupport03",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsSupport03.lean",
+      "sha256": "41016f0ca36be201eaed32e50a289865cfb70700de3e01ee480eb259c075239e"
+    },
+    {
+      "bytes": 2414,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsSupport04",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsSupport04.lean",
+      "sha256": "b39685d9be32fe856486f0d423b13bc4656d45f8b11a9fb27acfebda4551e685"
+    },
+    {
+      "bytes": 2414,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsSupport05",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsSupport05.lean",
+      "sha256": "d559cfed28059422cf6ddf77f74588b3cde46a5de5cfcb11a496613bcf94e868"
+    },
+    {
+      "bytes": 2414,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsSupport06",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsSupport06.lean",
+      "sha256": "63f59baf74f1b5320f537d8b89d079cb5bb005aa096769ad1ca42461f90a9001"
+    },
+    {
+      "bytes": 2414,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsSupport07",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsSupport07.lean",
+      "sha256": "2e1ff22bfd22f71ba6d9649b4afa32f8dacd85b00fb48e55d917d4fb60a963d9"
+    },
+    {
+      "bytes": 2414,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsSupport08",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsSupport08.lean",
+      "sha256": "5600a4372ffe550ab2a8131897e43eef3361bb2aa35e2b58fb3239f34abdc194"
+    },
+    {
+      "bytes": 2414,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsSupport09",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsSupport09.lean",
+      "sha256": "c4d70c9e42b8e3b56956e9b37723033f7a75eb791fabdf99ff76639e596686f1"
+    },
+    {
+      "bytes": 2414,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsSupport10",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsSupport10.lean",
+      "sha256": "e97611b1652f2f835ad69ab539d7c1fbd52601061b7cd99f9cf690c5af6874d5"
+    },
+    {
+      "bytes": 2414,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsSupport11",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsSupport11.lean",
+      "sha256": "f9678cb9495f36f6165fb394ec349e3bb8e78cc0f1d7663e3cf4eb3fac075873"
+    },
+    {
+      "bytes": 597,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsSupportSummary",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsSupportSummary.lean",
+      "sha256": "7db3d4c654cb75347b79e2683e03b2be54ee63ce4b5716e7f595d0a34d745710"
+    },
+    {
+      "bytes": 13186,
+      "module": "RelativeConicArcs.Q11BrianchonPetersen",
+      "path": "RelativeConicArcs/Q11BrianchonPetersen.lean",
+      "sha256": "08fc334fcf11ef6aa7059b8cbef4fdfe40b4a221d2f01091041ff6df4d6d3f4d"
+    },
+    {
+      "bytes": 14115,
+      "module": "RelativeConicArcs.Q11DecodingSynthesis",
+      "path": "RelativeConicArcs/Q11DecodingSynthesis.lean",
+      "sha256": "5ef74a255532a6e7fd11509241f1454c876110f07bf9f66f4d280c19c29a18b6"
+    },
+    {
+      "bytes": 2577,
+      "module": "RelativeConicArcs.Q11DyeAxioms",
+      "path": "RelativeConicArcs/Q11DyeAxioms.lean",
+      "sha256": "5dc4fd1e42c9f807a65311ca5b7b07cda94bcf1ec7978d3d6807254200729a7f"
+    },
+    {
+      "bytes": 2595,
+      "module": "RelativeConicArcs.Q11DyeConsequences",
+      "path": "RelativeConicArcs/Q11DyeConsequences.lean",
+      "sha256": "8bc3e41e6a206e58f79a9553d30927f7eb5b7f9fc85fd4315d97b7948d1a8c4a"
+    }
+  ],
+  "generator": {
+    "bytes": 5241,
+    "path": "scripts/generate-q11-a5-point-action.py",
+    "sha256": "a387e80997c5dacdc50787243a91734663a0f49015fe3ac5c19c2a4d1fefb330"
+  },
+  "source_commit": "10d1941a3683d100548436a77d030a69d61347a0"
+}

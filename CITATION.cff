@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use these certificates, please cite this software and the accompanying paper."
+title: "finitegeom-clebsch-q11-certificates"
+type: software
+authors:
+  - given-names: Tavis
+    family-names: Rudd
+    email: tavis@damnsimple.com
+    orcid: "https://orcid.org/0009-0003-6405-3275"
+repository-code: "https://github.com/tavisrudd/finitegeom-clebsch-q11-certificates"
+license: Apache-2.0
+version: 0.1.0
