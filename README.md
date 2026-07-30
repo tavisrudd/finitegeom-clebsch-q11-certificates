@@ -3,12 +3,13 @@
 Generated and finite-checking Lean 4 modules for the order-11 portion of the
 Clebsch rigidity formalization. This repository is a downstream companion to
 [`finitegeom`](https://github.com/tavisrudd/finitegeom), pinned at commit
-`ef6317c5e1a348a91a1928104f9c8e1831bfb03d`.
+`81227352974bf7d28f84cb6866936f842fb4de02`.
 
 The package contains 118 Lean modules not supplied by the pinned dependency.
 They encode and check the order-sixty action, its point orbits, the code–arc
 dictionary, exact decoder tables, and the order-11 rigidity consequences.
-Human-scale chord-defect and small-field arguments remain in `finitegeom`.
+Human-scale chord-defect, orientation-two-graph, and small-field arguments
+remain in `finitegeom`.
 
 The import-only boundary is
 `RelativeConicArcs.Gates.ClebschRigidityTrust`. Its rigidity conclusion uses

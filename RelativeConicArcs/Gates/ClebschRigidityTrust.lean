@@ -3,6 +3,7 @@ import RelativeConicArcs.Q11Coding
 import RelativeConicArcs.Q11DecodingSynthesis
 import RelativeConicArcs.Q11DyeConsequences
 import RelativeConicArcs.ClebschChordDefect
+import RelativeConicArcs.ClebschOrientationTwoGraph
 import RelativeConicArcs.Q9Sylvester
 import RelativeConicArcs.SmallKGeometricBridge
 
@@ -52,6 +53,14 @@ discharge the remaining finite geometric exclusions.
 #print axioms RelativeConicArcs.ClebschChordDefect.chordDefect_identity_of_moments
 #print axioms RelativeConicArcs.ClebschChordDefect.clebsch_uncovered_formula
 #print axioms RelativeConicArcs.ClebschChordDefect.orders_of_clebsch_uncovered_conic_card
+#print axioms RelativeConicArcs.ClebschOrientationTwoGraph.triangleProduct_switch
+#print axioms RelativeConicArcs.ClebschOrientationTwoGraph.goldenMatrix_sq
+#print axioms RelativeConicArcs.ClebschOrientationTwoGraph.goldenMatrix_pairBalance
+#print axioms RelativeConicArcs.ClebschOrientationTwoGraph.principalBlock_mulVec_deletedRow
+#print axioms RelativeConicArcs.ClebschOrientationTwoGraph.principalBlock_sq
+#print axioms RelativeConicArcs.ClebschOrientationTwoGraph.supportCubic_add_const
+#print axioms RelativeConicArcs.ClebschOrientationTwoGraph.supportCubic_eq_triangle_sum
+#print axioms RelativeConicArcs.ClebschOrientationTwoGraph.supportGradient_node
 #print axioms RelativeConicArcs.Q9Sylvester.distanceTwo_clique_number_five
 
 -- Universal small-arc moment consequences.

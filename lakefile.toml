@@ -4,7 +4,7 @@ defaultTargets = ["ClebschQ11Certificates"]
 [[require]]
 name = "finitegeom"
 git = "https://github.com/tavisrudd/finitegeom"
-rev = "ef6317c5e1a348a91a1928104f9c8e1831bfb03d"
+rev = "81227352974bf7d28f84cb6866936f842fb4de02"
 
 [[lean_lib]]
 name = "ClebschQ11Certificates"
