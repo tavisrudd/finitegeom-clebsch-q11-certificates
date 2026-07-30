@@ -29,6 +29,11 @@ lake build ClebschQ11Certificates
 ```
 
 The pinned `finitegeom` commit must be available from its public Git remote.
+The aggregate Paper I gate is
+`RelativeConicArcs.Gates.ClebschRigidityTrust`.  Its target diagnostics are
+recorded in
+`verification/clebsch_rigidity_trust/axiom-audit.txt`; the audit includes the
+`#print axioms` result for every paper-facing terminal imported by the gate.
 
 ## Verify generated orbit data
 
