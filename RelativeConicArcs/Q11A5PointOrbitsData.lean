@@ -3,10 +3,12 @@ import RelativeConicArcs.Q11BrianchonPetersen
 /-!
 # Data for the finite A5 point-orbit bridge for the Clebsch hexagon
 
-This base module records the 60 normalized projective lifts independently constructed by
-`check_code_automorphisms.py`, the canonical 133 points of `PG(2,11)`, and the explicit orbit data.
-The bounded `Q11A5PointOrbitsMatrix*`, `Support*`, `Rows*`, and `Fixed*` leaves check the finite
-certificates.
+This base module records sixty normalized projective matrices over `F_11`,
+the canonical 133 representatives of `PG(2,11)`, and the explicit orbit
+data.  The bounded matrix, support, row, and fixed-point modules verify by
+kernel reduction that these matrices are invertible, preserve the displayed
+six-arc, act on every projective point as recorded, and have the stated fixed
+sets.
 
 This is a finite bridge, not the pencil-and-paper derivation that the projective stabilizer is the
 icosahedral `A5` representation.  Every finite assertion uses kernel-checked `norm_num` or ordinary
@@ -35,7 +37,10 @@ def pointVec (p : PointIndex) : Vec3 :=
   else if _ : p.1 < 132 then ![0, 1, ((p.1 - 121 : ℕ) : Scalar)]
   else ![0, 0, 1]
 
-/-- The 60 projective matrices, normalized exactly as in `check_code_automorphisms.py`. -/
+/-- Sixty row-major `3 × 3` matrices over `F_11`, each normalized by making
+its first nonzero entry equal to one.  The matrix checker proves that every
+entry represents an invertible projective transformation and that the sixty
+transformations are distinct. -/
 def matrixCode (g : GroupIndex) : MatrixCode :=
   ![
     ![1, 0, 0, 0, 1, 0, 0, 0, 1],
@@ -181,7 +186,7 @@ def matrixDet (g : GroupIndex) : Scalar :=
 
 /-- Convert a homogeneous vector to the canonical point index.  The final branch also makes the
 function total at zero; `matrixVec_pointVec_ne_zero` below verifies that this branch is never used
-by the reflected action on the 133 canonical representatives. -/
+by the normalized projective action on the 133 canonical representatives. -/
 def canonicalIndex (v : Vec3) : PointIndex :=
   if h0 : v 0 ≠ 0 then
     let y := v 1 / v 0
@@ -193,7 +198,7 @@ def canonicalIndex (v : Vec3) : PointIndex :=
   else
     132
 
-/-- The reflected projective action on all 133 canonical points. -/
+/-- The normalized projective action on all 133 canonical points. -/
 def pointAction (g : GroupIndex) (p : PointIndex) : PointIndex :=
   canonicalIndex (matrixVec g (pointVec p))
 
@@ -223,7 +228,7 @@ macro "q11_fixed_union_norm" : tactic =>
       pointAction, canonicalIndex, matrixVec, matrixEntry, matrixCode, pointVec, witnessSet,
       witnessIndex, standardConicIndices] <;> decide)
 
-/-- Iteration of a reflected support permutation. -/
+/-- Iteration of a normalized support permutation. -/
 def supportPower (g : GroupIndex) : Nat → Fin 6 → Fin 6
   | 0 => id
   | n + 1 => fun i => supportPerm g (supportPower g n i)
@@ -268,7 +273,7 @@ def orbitIndex (p : PointIndex) : Fin 7 :=
   else if p ∈ orbitPoints 5 then 5
   else 6
 
-/-- Image of one point under the 60 reflected projectivities. -/
+/-- Image of one point under the 60 normalized projectivities. -/
 def pointOrbit (p : PointIndex) : Finset PointIndex :=
   Finset.univ.image fun g : GroupIndex => pointAction g p
 
@@ -338,7 +343,7 @@ def pointOrbit (p : PointIndex) : Finset PointIndex :=
 def standardConicIndices : Finset PointIndex :=
   {0, 12, 26, 42, 49, 58, 69, 82, 97, 103, 111, 132}
 
-/-- Fixed points of one reflected projectivity. -/
+/-- Fixed points of one normalized projectivity. -/
 def fixedPoints (g : GroupIndex) : Finset PointIndex :=
   Finset.univ.filter fun p => pointAction g p = p
 
