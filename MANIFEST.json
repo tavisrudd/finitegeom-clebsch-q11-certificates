@@ -2,7 +2,7 @@
   "schema_version": 1,
   "dependency": {
     "repository": "https://github.com/tavisrudd/finitegeom",
-    "commit": "570086982b26075a71a331a81bb1b519e9a27e7f"
+    "commit": "85dfde9e13e6c3d004e0e659fb83c1a4761902d0"
   },
   "module_count": 121,
   "roots": [
@@ -16,10 +16,10 @@
       "sha256": "501c1a378d0f1596d4830504c4cb1b6bd7c584791ee695d68647c8818c067890"
     },
     {
-      "bytes": 7025,
+      "bytes": 7132,
       "module": "RelativeConicArcs.Gates.ClebschRigidityTrust",
       "path": "RelativeConicArcs/Gates/ClebschRigidityTrust.lean",
-      "sha256": "c5d532dbd79dcb2eef602ced85105b72943a0a1af05de11c3c008c1ed9a1d747"
+      "sha256": "4bc2adb5f64df0a0f3490a948020fbe200d9169d6c08d232a0ed2879e7ab6319"
     },
     {
       "bytes": 28890,
@@ -741,5 +741,5 @@
     "path": "scripts/generate-q11-a5-point-action.py",
     "sha256": "a387e80997c5dacdc50787243a91734663a0f49015fe3ac5c19c2a4d1fefb330"
   },
-  "source_commit": "81bae5e0eb02c26992f21b71808ef74a22e3b406"
+  "source_commit": "dd5274a6ab5c766fc4a538a59b3a670257cbd8d6"
 }
