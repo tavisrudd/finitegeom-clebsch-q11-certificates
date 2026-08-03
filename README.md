@@ -3,7 +3,7 @@
 Generated and finite-checking Lean 4 modules for the order-11 portion of the
 Clebsch rigidity formalization. This repository is a downstream companion to
 [`finitegeom`](https://github.com/tavisrudd/finitegeom), pinned at commit
-`570086982b26075a71a331a81bb1b519e9a27e7f`.
+`85dfde9e13e6c3d004e0e659fb83c1a4761902d0`.
 
 The package contains 121 Lean modules not supplied by the pinned dependency.
 They encode and check the order-sixty action, its point orbits, the code–arc
