@@ -1552,7 +1552,7 @@
   },
   "gate": "RelativeConicArcs.Gates.ClebschRigidityTrust",
   "lean_toolchain": "leanprover/lean4:v4.32.0-rc1",
-  "manifest_sha256": "5f234abdc8a4d56ff059e686cd7d498d7b41b14727c224434279d0c71224e523",
+  "manifest_sha256": "6077ff0c8ae83ab4d3c367e1da5d2c77af77c0dc1a2e922d22578e3380fb2ceb",
   "package": "finitegeom-clebsch-q11-certificates",
   "repository": "https://github.com/tavisrudd/finitegeom-clebsch-q11-certificates",
   "schema_version": 1,
