@@ -14,6 +14,7 @@ roots = [
   "RelativeConicArcs.Q11A5PointOrbits",
   "RelativeConicArcs.Q11A5PointOrbitsArithmetic",
   "RelativeConicArcs.Q11A5PointOrbitsBasic",
+  "RelativeConicArcs.Q11A5PointOrbitsBlocks",
   "RelativeConicArcs.Q11A5PointOrbitsBrianchon",
   "RelativeConicArcs.Q11A5PointOrbitsConic",
   "RelativeConicArcs.Q11A5PointOrbitsData",

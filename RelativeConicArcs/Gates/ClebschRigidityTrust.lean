@@ -41,6 +41,12 @@ terminals.
 #print axioms RelativeConicArcs.Examples.Q11A5PointOrbits.unique_twelve_orbit
 #print axioms RelativeConicArcs.Examples.Q11A5PointOrbits.brianchon_points_one_orbit
 
+-- The dictionary between canonical point indices and the projective points they denote, without
+-- which the orbit statements above identify the witness and the conic only by index.
+#print axioms RelativeConicArcs.Examples.Q11A5PointOrbits.pointVec_eq_projectiveVec
+#print axioms RelativeConicArcs.Examples.Q11A5PointOrbits.pointVec_witnessIndex
+#print axioms RelativeConicArcs.Examples.Q11A5PointOrbits.mem_standardConicIndices_iff
+
 -- The code--arc dictionary and syndrome conic.
 #print axioms RelativeConicArcs.Examples.Q11Coding.witness_mds_columns
 #print axioms RelativeConicArcs.Examples.Q11Coding.projective_distanceThreeDirections_eq_standardConic
