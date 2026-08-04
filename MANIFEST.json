@@ -4,7 +4,7 @@
     "repository": "https://github.com/tavisrudd/finitegeom",
     "commit": "85dfde9e13e6c3d004e0e659fb83c1a4761902d0"
   },
-  "module_count": 121,
+  "module_count": 122,
   "roots": [
     "RelativeConicArcs.Gates.ClebschRigidityTrust"
   ],
@@ -16,16 +16,16 @@
       "sha256": "501c1a378d0f1596d4830504c4cb1b6bd7c584791ee695d68647c8818c067890"
     },
     {
-      "bytes": 7132,
+      "bytes": 7567,
       "module": "RelativeConicArcs.Gates.ClebschRigidityTrust",
       "path": "RelativeConicArcs/Gates/ClebschRigidityTrust.lean",
-      "sha256": "4bc2adb5f64df0a0f3490a948020fbe200d9169d6c08d232a0ed2879e7ab6319"
+      "sha256": "0936dd75942cd1fd65608484f2fc7685c88aa703d1d32ccd25442d68e2cd06dc"
     },
     {
-      "bytes": 28890,
+      "bytes": 28937,
       "module": "RelativeConicArcs.Q11A5PointOrbits",
       "path": "RelativeConicArcs/Q11A5PointOrbits.lean",
-      "sha256": "d1bf97cf47c9c0b23f0fe73f049e3f7e42e50137b6d28e59f3954cbe779dfa0b"
+      "sha256": "152728aaf586502d4611e7d10ee54f143678a3247c33d398d76943bec57c213c"
     },
     {
       "bytes": 3603,
@@ -40,10 +40,16 @@
       "sha256": "e1a4abe2d37c5157724f98d185f86aaef0c676fc33f20956cf056cf76efbd667"
     },
     {
-      "bytes": 795,
+      "bytes": 5159,
+      "module": "RelativeConicArcs.Q11A5PointOrbitsBlocks",
+      "path": "RelativeConicArcs/Q11A5PointOrbitsBlocks.lean",
+      "sha256": "1ebaa88593fef0b93ec82a93e434d9f395154f2a67c123e64a409e6d0d19380d"
+    },
+    {
+      "bytes": 907,
       "module": "RelativeConicArcs.Q11A5PointOrbitsBrianchon",
       "path": "RelativeConicArcs/Q11A5PointOrbitsBrianchon.lean",
-      "sha256": "3e07b6a5aa56d3b45399b7784f541bbf0785b021d835112a266ebce3c1494cd1"
+      "sha256": "b22466186f03b9ed33d82921cd693ae06c34558d6af8451b56b0836bf7138843"
     },
     {
       "bytes": 600,
@@ -52,10 +58,10 @@
       "sha256": "6941bbfa772edf6e6011270f87b63ed29f5c130da31c21eea3037bd4b4bc5fa0"
     },
     {
-      "bytes": 11810,
+      "bytes": 8451,
       "module": "RelativeConicArcs.Q11A5PointOrbitsData",
       "path": "RelativeConicArcs/Q11A5PointOrbitsData.lean",
-      "sha256": "ecd16d60305cb7b1d28488f12c6f795deb87e916e94ac7ea2b0baae58a140e71"
+      "sha256": "2d7f631172bd260140d11b0dd48dec53865a42fb42acca97ec272e896da9ff0c"
     },
     {
       "bytes": 4680,
@@ -178,10 +184,10 @@
       "sha256": "bd1c76b59ecfcdf46e84fd64eefbe9ac3f78e2f70b22e76ea1ac3bf9c62b9358"
     },
     {
-      "bytes": 1408,
+      "bytes": 1631,
       "module": "RelativeConicArcs.Q11A5PointOrbitsPartition",
       "path": "RelativeConicArcs/Q11A5PointOrbitsPartition.lean",
-      "sha256": "43477142ae11e8da4655383d3abb0261eef48338a3d3063c10e9fe996e287890"
+      "sha256": "83de6b27121956eccee0779357d2d70d88957f9938b99fd39ddff70168e52d49"
     },
     {
       "bytes": 1836,
@@ -196,70 +202,70 @@
       "sha256": "a25f4146c0f9cfb447b1a7a25a81f10ab4013d9f2764ab218429bb0519321688"
     },
     {
-      "bytes": 465,
+      "bytes": 460,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRows01",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRows01.lean",
-      "sha256": "6e4ff0441acdc365d3fba60bb2bef6033e08eed717c5996ce0c983c12d0509c4"
+      "sha256": "0ecf284a251096ad0144c1210f70639ebb64995f52ba971782fb2286eda65ea1"
     },
     {
-      "bytes": 467,
+      "bytes": 462,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRows02",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRows02.lean",
-      "sha256": "1afc0b2d665d4162be09cd29a3715cef8d5a97b837fba5ff4c389869ba4650fb"
+      "sha256": "1c98d35a0d0d7d1a68815877f0de43516caf6479cf7a3c22b713fd1d1c782f33"
     },
     {
-      "bytes": 467,
+      "bytes": 462,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRows03",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRows03.lean",
-      "sha256": "cc881984f0b78ecf8c6c9b3713668d0a0ef812b86b5215409aeece54deeaeead"
+      "sha256": "9a84806622ee2cc77f15cd37e2ef5ce6f95dd51d9e5dd6d8ed6196b59b720bb2"
     },
     {
-      "bytes": 467,
+      "bytes": 462,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRows04",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRows04.lean",
-      "sha256": "f92de758092527cc0b4d7a6582d7819fab9eb2530a1eb7200ba19be5ed892f14"
+      "sha256": "dde56f0b4acae067b8cd420e5341cbf9eafd6d0758a8e4324058b211c4a75bb5"
     },
     {
-      "bytes": 467,
+      "bytes": 462,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRows05",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRows05.lean",
-      "sha256": "08821a239217099ca960c0d561cb227088f10c60484827fabb1fbcf38d3eb37d"
+      "sha256": "65ab6b0f45cd185b7f523bd421454ef53f28390f727af40eedfa5206ba2d9754"
     },
     {
-      "bytes": 467,
+      "bytes": 462,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRows06",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRows06.lean",
-      "sha256": "29e7c60f8f71f47c8c44a0ed3fa3670f414570939a33619ef5a1fe9b2983c7a4"
+      "sha256": "4d33c48eb7f8bc1fb7a30fcca2cfd451acc56e3b928fbcd218800cd78a3be5e5"
     },
     {
-      "bytes": 467,
+      "bytes": 462,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRows07",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRows07.lean",
-      "sha256": "5d5656b73abe555b3b2474b136a8e0984da9d24505903242c980cf37fd651ee7"
+      "sha256": "f3dff7bfc67a649d17f5ba50042e78478d9e988ad1a4685ab39106e975f90d85"
     },
     {
-      "bytes": 467,
+      "bytes": 462,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRows08",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRows08.lean",
-      "sha256": "d76cff4fedc4f0e51b3db897a8475a20feafe4a6fbf1849ecbd87f150eacaa57"
+      "sha256": "4a2c3d381143c3388e35fb85ae530de005f080ce4b1faf606135783e60cb3ef5"
     },
     {
-      "bytes": 467,
+      "bytes": 462,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRows09",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRows09.lean",
-      "sha256": "454360db41afc93b3eadaeda476652714d4f40a7ba754e6d76879fe3cfee43bd"
+      "sha256": "1992080f729bc89b7470d69fb8191262e41313b289d24657db9f573d95232fe6"
     },
     {
-      "bytes": 467,
+      "bytes": 462,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRows10",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRows10.lean",
-      "sha256": "128bae9b6bb70975e3603fb641e7d814882a1305b349da79818b782edc03ded8"
+      "sha256": "5c284d1c44191d9b80e1cb4de20406a93452b81ebb8ca6c4f0cd8e8e0d53fbe6"
     },
     {
-      "bytes": 467,
+      "bytes": 462,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRows11",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRows11.lean",
-      "sha256": "54051d5dae1315cb66b34ac0aa2afbb542d9fe7ef9366bbec3e182b510b8642b"
+      "sha256": "be9ba39309f145e3bafa24a12a0d418d31fb3380060624a0131d4150b2ed9fd9"
     },
     {
       "bytes": 1835,
@@ -292,334 +298,334 @@
       "sha256": "8cd65a4ffd8afff8d898707af51cbd79b55e101c763baec0af97d1a1e231d430"
     },
     {
-      "bytes": 1734,
+      "bytes": 1729,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG05",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG05.lean",
-      "sha256": "feab0edbf5d7bbb12d89aaddd43adc2f179e8227546d3a8d23879ba0c560cb5d"
+      "sha256": "ad9866fab0c001ed20d9ba7c9400ff6911bd57f806be5f8cbe5ff1f9a5d9d76c"
     },
     {
-      "bytes": 1734,
+      "bytes": 1729,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG06",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG06.lean",
-      "sha256": "9aa85ff587b0ece3c50aac927d7ffbe06e571afde2f6aef140f75b89bf8fdff6"
+      "sha256": "2abe92442970f005fa6efa3a92de24115e32a0180916abd703b3b733a4fd7996"
     },
     {
-      "bytes": 1734,
+      "bytes": 1729,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG07",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG07.lean",
-      "sha256": "d100d1670346bfd294cb3ce463ea2f40864d368ad246036dd2230c76fb25ff77"
+      "sha256": "8aa57f0cff84f500bab77afecf4f6b2bb795368d5617709b831c2010b964b8ee"
     },
     {
-      "bytes": 1734,
+      "bytes": 1729,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG08",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG08.lean",
-      "sha256": "695a29a3a6a161693d01b883c8acb4b68f9864be17fd15088185910c4709b7c3"
+      "sha256": "4a135707cdb6bfd4889fa458b4a75ad218fe42612963c3a5deadc5e1e1b484b4"
     },
     {
-      "bytes": 1734,
+      "bytes": 1729,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG09",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG09.lean",
-      "sha256": "b0718ddc396fe11dcda965da982a619b10c07cad8f9e8ab9a38c3fee8cdc8699"
+      "sha256": "bcf579c3d4df395dec82496688069eea296ebce602898fac58a13354c3e79c88"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG10",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG10.lean",
-      "sha256": "9339664658e388e0fe9d811b36cb1914e50e3c50717cd3321fe9b80950e87dd3"
+      "sha256": "36f793a64b1e4cb388e1076440e05a4183d08a7b3cb829a28e407a2c49dbbe31"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG11",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG11.lean",
-      "sha256": "a6774a8f06f1d3d76ff99a7745a98555a9bd72020d61f80e3f1458ef5c2fb4ef"
+      "sha256": "1c6e9f4607b5fcb4fcd139e3e4ee73066c7eda3c4f014f380201b5d6f9ae1737"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG12",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG12.lean",
-      "sha256": "0cf896a35bb7f1dff393783883b2e1369b3562b34770fa842fdfafcba61e32aa"
+      "sha256": "a944440293b03482d3c1801cb3cf811b1d4f03f7ba0ae113661a31033706a8e5"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG13",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG13.lean",
-      "sha256": "dec674e4a8fcf20737c5c0d84cef9cd635579190be123b512b6676743c302af7"
+      "sha256": "02e85c1637dd49b14a2b0c8975bb03bc9958f7e7cc58f8fd896790eda9e0ce18"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG14",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG14.lean",
-      "sha256": "a3c579a6deacdf6dfc6235b697665749a4d1fa0daa485710e71c0a67f2fd6233"
+      "sha256": "d11e7a4ea390a1ff89ba961082cb079c4317eb9adec21f14b91bc0b8f126fe8a"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG15",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG15.lean",
-      "sha256": "ccf68403ad876b1ffada06afed261ccc7abf70da92cc001b19f637d8472f7688"
+      "sha256": "6cd34fe286bde03adf0cf7c935cc2eb8c642f63c1dce026db3ba599921ac6166"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG16",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG16.lean",
-      "sha256": "f4be7ac53b19f486c15a717f1f7303825899dd8b6479bf58ad52bed6ccd55baa"
+      "sha256": "3a336f5524b5e7fe859eec37d74aef2e5c679a0d4101b1a6699e1968d50ebc52"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG17",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG17.lean",
-      "sha256": "69dec426018fd37ed923d71efa4dc98c59de09820569f6b3dc4ad52d341c215f"
+      "sha256": "5ddb7980424498eb1d756adfc8d47f0c9c955c291496f8117eab9a228be6ae91"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG18",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG18.lean",
-      "sha256": "224c795773c8ba9a002dd1209fc8f64211688a54415aa2adcebeb5f9eee3caaf"
+      "sha256": "3ed2c086577aa1fc6a1ab0bfc240d4bbae15e91143df2c1644c6d498f1eaa5b5"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG19",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG19.lean",
-      "sha256": "95b7511d33623e24884427a18859a5310b1246309bc1057e070457bdb1dfdda3"
+      "sha256": "ca710c88bcf24cdb75ebda98287a75e18ea947bd4266d0fab9ef74bbc984c9b2"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG20",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG20.lean",
-      "sha256": "8cd2f00b34f5a80988bafdb7cfb0bdd75839849edc6bc26af3ad2933597a35e7"
+      "sha256": "ddad9dae77d804022a38389353c95aa3477a49defa8c258566aa26b74816d2bc"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG21",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG21.lean",
-      "sha256": "53ccf68f64495152eb92b165555804fc9da3aee784e4005353ae5ab2248d5586"
+      "sha256": "4c0c170da30252b07099a14eb6d11f6d2395047896d7148bc40e9ea11a3db713"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG22",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG22.lean",
-      "sha256": "1cbd1ff09692620f4aa519cd967859b784bfb67a1c70e9020fa3832d09b909c2"
+      "sha256": "794d689e4c5d237f2f97e3c2b44e67fa1e51a09485b28378f640b72a3e004748"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG23",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG23.lean",
-      "sha256": "4e7f67a2205e045b02d8b4d10632f8a2fc648b72cf198124c792d8d8f1729213"
+      "sha256": "0eb45aae07c04edecad798d553143d801ad59a8a9a3e8d9141bdda6d111c2384"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG24",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG24.lean",
-      "sha256": "f45015dd6d9149e458be4128cf77dbf6c1ab4f80439ff935efa58bdf5f57b02e"
+      "sha256": "b56780c6c8cea1d1ed12f32c33dc9d01cd49f3368923ebd2235a4b0f34b5d832"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG25",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG25.lean",
-      "sha256": "4c5252804ab346f51e02de973f2835f0b9dbeb6e3212fb4446f3a82b4c533d5a"
+      "sha256": "0fe95b2118931da7b8bf9996f63c7b0c41ed069f9d020dcf772108cbdd38a99a"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG26",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG26.lean",
-      "sha256": "1497c0e0cf404d62250127169befc2c82cfadbf7e1e709098c16a533a5a98972"
+      "sha256": "61249d2466053d47013d36d435ec349f6f259fd753c31eaf30a8aced6aa866d3"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG27",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG27.lean",
-      "sha256": "7434b5edc7e484afdbcbdb8785addd92bc24da2a20f3cf0bb2c28fb3656da076"
+      "sha256": "5d53aa4c1caad88efad3c8965fbc54caf81c878ecc8441385c8e4812cdd2bbc7"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG28",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG28.lean",
-      "sha256": "044156e688335489c5e985db6a6dc4a51b5c5be71ac40396dea6e66a387f29d5"
+      "sha256": "7b1be7badf894d96810bce349ad80fb80ca2ff765aed1304f9ce3cf79a4fcf9d"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG29",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG29.lean",
-      "sha256": "5e0c89dc9006a00f4e8cda9e8d787983e5b6fa7c166712b673e407b875228d4e"
+      "sha256": "25f6b3c34472e07ca8dea3a27330c6efe7de2d25c66792506a8369482f73983e"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG30",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG30.lean",
-      "sha256": "296d33a5d1c6264f7bde7461532a964f529ae1ad9a96597a2c381202262c3795"
+      "sha256": "a20e118f0f17bad9cb571f86be40e84a5faa747c2f3b4dfbd135441472a3d3eb"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG31",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG31.lean",
-      "sha256": "6c5e5af1c8e826b139e30722e80203857bc795f01bbb9fec7614bb120843810c"
+      "sha256": "cbab9b6769d044a644ee02c41c39e91f093615216bdfa7dd522337cb48efda3d"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG32",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG32.lean",
-      "sha256": "95c591083e8e7591253dce5f4aba73ff462b647235f29152dfd56193f612e83e"
+      "sha256": "724deac5908a4fa421481e79ca7b848e0a336007650e88520c38e590f014ede4"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG33",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG33.lean",
-      "sha256": "4bfb0eb605df0d763eb5570cc42ab8df33ecf6ad235e46ef4b8be42779b9f4c8"
+      "sha256": "5dc9909f636d406ab35723a7970a1fa4591c4188c62c46e853a447386da14270"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG34",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG34.lean",
-      "sha256": "80398699d7ece54f4f7ada4c022ee66e1a5b9a60dab001ecaec5694728dc0a7c"
+      "sha256": "3690b3acabc78a267678cc3ff4f7dbfc6999ff3212cbc0550519ba367ca19bc0"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG35",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG35.lean",
-      "sha256": "82ba5bf99454c5c92302f46a78a18cd35e5f4cc304ba8c199f844cc366b8bef6"
+      "sha256": "ff0952e1191dbb0caabda8f60b131ea42f2488efc2473aab5bc80c3f707f707f"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG36",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG36.lean",
-      "sha256": "a280d4482177d889d59be5154c60437f6aba2b24ab38e9387c5799323265736d"
+      "sha256": "cccb1e8b5a0fe061dfc441761fc7564fd8a9d5009cd5bf453c95b5417f85ff4d"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG37",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG37.lean",
-      "sha256": "82e7f9cffd24d006f2ba8084ab09f9e9ddc53df8d1b05c44d47beca1a531f3a7"
+      "sha256": "d4ba1c7d99361ad524c0a64c8c8bb0c1dba2fbeceee1e3daba6ce1f16e5c8147"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG38",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG38.lean",
-      "sha256": "298773e7b9dc579d55193df51cb2cb64b6791e36237afe1d307c57c10e0de1eb"
+      "sha256": "e034ace78a1cabfd32b6756d248a7783f597f37be2ed6274f0e4297f55942321"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG39",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG39.lean",
-      "sha256": "b215aae8a9e463b7931fb8523f4bb0cf905b95701d95d1d3015f9e610c8e336b"
+      "sha256": "a0681b3a4360b4470600d8ec631d698befe7badb1ca80bb79c3c86d67b3e4a5a"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG40",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG40.lean",
-      "sha256": "7bf120f2df59ea7d3b07cf18c2ce6699d498421e35f5505228bc2fca5f9e6dab"
+      "sha256": "42595489a26be42d78e306df6465e04b1c17833b9f185c886f3ef78d16389895"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG41",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG41.lean",
-      "sha256": "763390a79129304ea0d7f028d2a2b33582115c39fbc6aeac232819edb3317fcd"
+      "sha256": "caf9716c2eb6eb91943952adf89c53d72be081fa71fcfad2e28ddbc1fa143653"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG42",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG42.lean",
-      "sha256": "40e7456764ed74bdd44ea2f2322488309d21e90913d4830e8f51a208e54ca893"
+      "sha256": "6169169eb2de365ff2a9132da77d03e23c3f8d85c6c260fbe7531cd759daa666"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG43",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG43.lean",
-      "sha256": "6abe8c8d3a0f9392de0c4b94659d28a6cc30222798aff33db9eda4d650be35c6"
+      "sha256": "043256c1b047a38eb4eb3474afa5cf2e4b75519826c09000c6759601b8e4cb07"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG44",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG44.lean",
-      "sha256": "29f50b4fb3e2c254241ab25e3d92eb61a9287cc0ae8539c768ab28ff4449a422"
+      "sha256": "fd484e92b2695de174edb138675eb3f33f992d5cbdd584afe0f637ad8eb6be5f"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG45",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG45.lean",
-      "sha256": "f7320b2c67e72422a3fe9a7fdef34e014c39d29e2ae1b83b9dd51442343bb0d9"
+      "sha256": "721dc69808f87f47ce394b5587dc164290bb41cbb0fcc803116aaaafaa4b9008"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG46",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG46.lean",
-      "sha256": "2c54682fdc88ed6b5efbe039badca7b63cf35f22d052e2cc73ce89d1e35ac9eb"
+      "sha256": "f2ec182f756ba0ce3b7c61855d1b236fd8a28e8de08039f5e8294b6a8d5c1e4b"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG47",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG47.lean",
-      "sha256": "06cbca5f58c8642cc7cc4d4f06538048a511f1d08baee9c8591638e0d902fa24"
+      "sha256": "16e8c072f64f10e91c0892b9ca62e18652ccabeddd249ae8d32a2dfdcc46bcc0"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG48",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG48.lean",
-      "sha256": "a6faed062d6d7c2987f34aaa6f9de179d7260164814a9563ea6dcee60fe0504c"
+      "sha256": "1771f1a963edef265ecad5e9f615b429103ce0b30544038196b08ba014d26521"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG49",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG49.lean",
-      "sha256": "58952bd935e19732963d56109fe5f9379978cbee8cb0d00eb67fc0b137e7d4d7"
+      "sha256": "7b5b2b2685c54c46b74f9d042862ad208073dcdda3c0a2f799f6c28540e513a6"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG50",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG50.lean",
-      "sha256": "972e79eb84fcc67e646687a08133c1a4aeb17fe3a64832b6de48120ab781e2a6"
+      "sha256": "0da88155b2321c1a85a9b1e10b901e7f669c8953c3201ae45fffbe3807ecddf1"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG51",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG51.lean",
-      "sha256": "0f428d976a5573aab1574275afc0f0d52e81e892d82f5e18ecc69415c08490d1"
+      "sha256": "3546788583bb3efd3fddbb8221b67027477dc7077584d7d0e833e7fa614c36d0"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG52",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG52.lean",
-      "sha256": "0f0b0e58aa388e61bbbb88f08d5048e3922c5b2cad6d04dc5efb3c6f89c12dd7"
+      "sha256": "ca7f8aa3a210fcf17957f90d441edc384b6a298c17fb00ef18be817162c6fb3e"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG53",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG53.lean",
-      "sha256": "59e6d42ed289de133e863a289341867a83498b4191620e9dd876036446302dae"
+      "sha256": "86127fd7c33edcb924566113904589cc1f6d2cc37715eb207732056e05ebdc60"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG54",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG54.lean",
-      "sha256": "929a6f4c5407d36b3e04e516e84521829db634b2171a2815ee855b38c70897ec"
+      "sha256": "4b28bd9b48b9b9acb980bbc8583f0617144ff5fd6d7adb5a5515c1b0b923c339"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG55",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG55.lean",
-      "sha256": "abe98dfdcfa32ac3059911234bb3824d985184a790cc270303bbe34a397934bc"
+      "sha256": "a6889305c4aca93d5e93124e2578989a0727412c1a3fec3291e3d9acd2ac5a5e"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG56",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG56.lean",
-      "sha256": "163f0408952774acc59628784422e694cf18a3988d2b606b7bdaf837c3cf0d7f"
+      "sha256": "4b384126aaa049bf4f4e1c3c15ee4d19ac2c29a0b4fd49b7b138a8eb635a1906"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG57",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG57.lean",
-      "sha256": "2448afa1633b16d2f0390eae9565ca7750ca4046d17bd96b262c1bedfcd2c188"
+      "sha256": "2cec1a587e87c0091fc347d9d64b4760e7a4e2df39fc639e119eec0f4129af2f"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG58",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG58.lean",
-      "sha256": "849472f208d1af0c73edb39a375361c0789abde1bcf6b9cc5ea843ca692c25b8"
+      "sha256": "4402d33178ded7dc3e49865eb8bf08bff00e711ce07ee7cbfda1b1f956d0ea9c"
     },
     {
-      "bytes": 1748,
+      "bytes": 1743,
       "module": "RelativeConicArcs.Q11A5PointOrbitsRowsG59",
       "path": "RelativeConicArcs/Q11A5PointOrbitsRowsG59.lean",
-      "sha256": "6a7a1fbd44d938c040991428207ccf620cd5ad75a24fba90e348b4b041bbbd8d"
+      "sha256": "c3ff34e3291d8756e774394b01f12189a8c9e5d2f872ca3a41d68d5fa2d81171"
     },
     {
       "bytes": 2377,
@@ -741,5 +747,5 @@
     "path": "scripts/generate-q11-a5-point-action.py",
     "sha256": "a387e80997c5dacdc50787243a91734663a0f49015fe3ac5c19c2a4d1fefb330"
   },
-  "source_commit": "dd5274a6ab5c766fc4a538a59b3a670257cbd8d6"
+  "source_commit": "9deca601ba7934c7aff6273a0416dd623b6969bc"
 }
