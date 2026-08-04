@@ -747,5 +747,5 @@
     "path": "scripts/generate-q11-a5-point-action.py",
     "sha256": "a387e80997c5dacdc50787243a91734663a0f49015fe3ac5c19c2a4d1fefb330"
   },
-  "source_commit": "9deca601ba7934c7aff6273a0416dd623b6969bc"
+  "source_commit": "76e7b43e45e2d1c0d2a120efcce7871938ee9e05"
 }
