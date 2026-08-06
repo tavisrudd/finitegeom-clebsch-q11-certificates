@@ -2,7 +2,7 @@
   "schema_version": 1,
   "dependency": {
     "repository": "https://github.com/tavisrudd/finitegeom",
-    "commit": "dca9ce75225685f79a81e0be24927ba6852e1c09"
+    "commit": "575cf3e991168fb96eb24c318263c5d0552aa531"
   },
   "module_count": 115,
   "roots": [
@@ -707,9 +707,9 @@
       "sha256": "d293ed7d3878b92bae143ad97585cac4098f0bd39888ff4f1f35994e6a70b048"
     },
     {
-      "bytes": 64202,
+      "bytes": 64244,
       "path": "verification/clebsch_rigidity_trust/gate-run.log",
-      "sha256": "6471c46ab44facfaa532cba806289a86851b2cc0b7746f8af2d01410c4112746"
+      "sha256": "995c2b23bc77280222e74eef23af0aa4bdab2fd1f4045e0b990d8f748e858d15"
     }
   ],
   "generator": {
@@ -718,5 +718,5 @@
     "sha256": "a387e80997c5dacdc50787243a91734663a0f49015fe3ac5c19c2a4d1fefb330"
   },
   "authority_commit": "0ddbca6505cb2215457896bb2a0817c38b68802d",
-  "source_commit": "82bc558118535df36989925c3207d6b4d32709eb"
+  "source_commit": "3cbd7466671bc4fb0e3e881c5dd5b29a21f5b07a"
 }
