@@ -2,24 +2,18 @@
   "schema_version": 1,
   "dependency": {
     "repository": "https://github.com/tavisrudd/finitegeom",
-    "commit": "85dfde9e13e6c3d004e0e659fb83c1a4761902d0"
+    "commit": "dca9ce75225685f79a81e0be24927ba6852e1c09"
   },
-  "module_count": 122,
+  "module_count": 115,
   "roots": [
-    "RelativeConicArcs.Gates.ClebschRigidityTrust"
+    "RelativeConicArcs.Gates.ClebschRigidityWithOrderElevenCertificates"
   ],
   "sources": [
     {
-      "bytes": 4970,
-      "module": "RelativeConicArcs.ClebschGatewayQ11Extension",
-      "path": "RelativeConicArcs/ClebschGatewayQ11Extension.lean",
-      "sha256": "501c1a378d0f1596d4830504c4cb1b6bd7c584791ee695d68647c8818c067890"
-    },
-    {
-      "bytes": 7567,
-      "module": "RelativeConicArcs.Gates.ClebschRigidityTrust",
-      "path": "RelativeConicArcs/Gates/ClebschRigidityTrust.lean",
-      "sha256": "0936dd75942cd1fd65608484f2fc7685c88aa703d1d32ccd25442d68e2cd06dc"
+      "bytes": 8608,
+      "module": "RelativeConicArcs.Gates.ClebschRigidityWithOrderElevenCertificates",
+      "path": "RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean",
+      "sha256": "d0290697c9a2dbce5edfeeea1f2873dd91270a33581dec3da8369867244d8ce6"
     },
     {
       "bytes": 28937,
@@ -704,42 +698,18 @@
       "module": "RelativeConicArcs.Q11A5PointOrbitsSupportSummary",
       "path": "RelativeConicArcs/Q11A5PointOrbitsSupportSummary.lean",
       "sha256": "7db3d4c654cb75347b79e2683e03b2be54ee63ce4b5716e7f595d0a34d745710"
+    }
+  ],
+  "support_files": [
+    {
+      "bytes": 7530,
+      "path": "verification/clebsch_rigidity_trust/axiom-audit.txt",
+      "sha256": "d293ed7d3878b92bae143ad97585cac4098f0bd39888ff4f1f35994e6a70b048"
     },
     {
-      "bytes": 13186,
-      "module": "RelativeConicArcs.Q11BrianchonPetersen",
-      "path": "RelativeConicArcs/Q11BrianchonPetersen.lean",
-      "sha256": "08fc334fcf11ef6aa7059b8cbef4fdfe40b4a221d2f01091041ff6df4d6d3f4d"
-    },
-    {
-      "bytes": 14312,
-      "module": "RelativeConicArcs.Q11CodeRigidityBridge",
-      "path": "RelativeConicArcs/Q11CodeRigidityBridge.lean",
-      "sha256": "96515c666f5d108fa1f152cfd6b45bc65648b713b89849d8921ad91371f0d57a"
-    },
-    {
-      "bytes": 14115,
-      "module": "RelativeConicArcs.Q11DecodingSynthesis",
-      "path": "RelativeConicArcs/Q11DecodingSynthesis.lean",
-      "sha256": "5ef74a255532a6e7fd11509241f1454c876110f07bf9f66f4d280c19c29a18b6"
-    },
-    {
-      "bytes": 2595,
-      "module": "RelativeConicArcs.Q11DyeConsequences",
-      "path": "RelativeConicArcs/Q11DyeConsequences.lean",
-      "sha256": "8bc3e41e6a206e58f79a9553d30927f7eb5b7f9fc85fd4315d97b7948d1a8c4a"
-    },
-    {
-      "bytes": 1853,
-      "module": "RelativeConicArcs.Q11RigiditySpine",
-      "path": "RelativeConicArcs/Q11RigiditySpine.lean",
-      "sha256": "c848ca34174519dd6dd7f7fe90d62599511d74370e44b33e5c83d91f156ddc97"
-    },
-    {
-      "bytes": 5645,
-      "module": "RelativeConicArcs.SixArcDegenerateConicExclusion",
-      "path": "RelativeConicArcs/SixArcDegenerateConicExclusion.lean",
-      "sha256": "eedcfc2e5c409735c130587cf66efcca5fdfa1fb14964c5d58906ca905cc0ba2"
+      "bytes": 64284,
+      "path": "verification/clebsch_rigidity_trust/gate-run.log",
+      "sha256": "5a8d7d28205c98528703e09602c48b343bdd6c0a93b948b2f7883c315a1b6192"
     }
   ],
   "generator": {
@@ -747,5 +717,6 @@
     "path": "scripts/generate-q11-a5-point-action.py",
     "sha256": "a387e80997c5dacdc50787243a91734663a0f49015fe3ac5c19c2a4d1fefb330"
   },
-  "source_commit": "4f61b2dc497ee5127da81a19a8522743b911005e"
+  "authority_commit": "0ddbca6505cb2215457896bb2a0817c38b68802d",
+  "source_commit": "33f51d89c34b2bd4b08d975d67e1663d062f80e4"
 }
