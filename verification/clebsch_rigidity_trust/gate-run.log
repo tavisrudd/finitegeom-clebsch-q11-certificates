@@ -1,4 +1,3 @@
-$ lake build 'RelativeConicArcs.Gates.ClebschRigidityWithOrderElevenCertificates'
 ℹ [3014/3018] Replayed RelativeConicArcs.Conic
 info: RelativeConicArcs/Conic.lean:54:0: 'RelativeConicArcs.Conic.completeOutside_bound_general' depends on axioms: [propext, Classical.choice, Quot.sound]
 ℹ [8659/8823] Replayed RelativeConicArcs.Q11BrianchonPetersen
@@ -775,7 +774,7 @@ info: RelativeConicArcs/SupportOrientationCommutant.lean:182:0: 'RelativeConicAr
 info: RelativeConicArcs/SupportOrientationCommutant.lean:183:0: 'RelativeConicArcs.SupportOrientationCommutant.oddLattice_integralCommutant_eq_ZsqrtFive' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8823/8823] Built RelativeConicArcs.Gates.ClebschRigidityWithOrderElevenCertificates (2.7s)
+ℹ [8823/8823] Built RelativeConicArcs.Gates.ClebschRigidityWithOrderElevenCertificates (2.6s)
 info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:55:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.point_orbit_partition' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
