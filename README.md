@@ -1,7 +1,7 @@
 # finitegeom-clebsch-q11-certificates
 
 Generated and finite-checking Lean 4 modules for the order-11 portion of the
-Clebsch rigidity formalization. This repository is a downstream companion to
+Clebsch rigidity formalization. This repository depends one way on
 [`finitegeom`](https://github.com/tavisrudd/finitegeom), pinned at commit
 `85dfde9e13e6c3d004e0e659fb83c1a4761902d0`.
 
