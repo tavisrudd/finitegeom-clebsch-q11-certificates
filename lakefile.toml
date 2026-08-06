@@ -4,13 +4,12 @@ defaultTargets = ["ClebschQ11Certificates"]
 [[require]]
 name = "finitegeom"
 git = "https://github.com/tavisrudd/finitegeom"
-rev = "85dfde9e13e6c3d004e0e659fb83c1a4761902d0"
+rev = "dca9ce75225685f79a81e0be24927ba6852e1c09"
 
 [[lean_lib]]
 name = "ClebschQ11Certificates"
 roots = [
-  "RelativeConicArcs.Gates.ClebschRigidityTrust",
-  "RelativeConicArcs.ClebschGatewayQ11Extension",
+  "RelativeConicArcs.Gates.ClebschRigidityWithOrderElevenCertificates",
   "RelativeConicArcs.Q11A5PointOrbits",
   "RelativeConicArcs.Q11A5PointOrbitsArithmetic",
   "RelativeConicArcs.Q11A5PointOrbitsBasic",
@@ -125,10 +124,4 @@ roots = [
   "RelativeConicArcs.Q11A5PointOrbitsSupport10",
   "RelativeConicArcs.Q11A5PointOrbitsSupport11",
   "RelativeConicArcs.Q11A5PointOrbitsSupportSummary",
-  "RelativeConicArcs.Q11BrianchonPetersen",
-  "RelativeConicArcs.Q11DecodingSynthesis",
-  "RelativeConicArcs.Q11CodeRigidityBridge",
-  "RelativeConicArcs.Q11DyeConsequences",
-  "RelativeConicArcs.Q11RigiditySpine",
-  "RelativeConicArcs.SixArcDegenerateConicExclusion",
 ]

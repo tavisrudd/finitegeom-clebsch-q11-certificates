@@ -19,7 +19,18 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "MANIFEST.json"
 GENERATOR = ROOT / "scripts" / "generate-q11-a5-point-action.py"
-ROOTS = ["RelativeConicArcs.Gates.ClebschRigidityTrust"]
+ROOTS = ["RelativeConicArcs.Gates.ClebschRigidityWithOrderElevenCertificates"]
+# The evidence a reader checks the gate against is not Lean source and would
+# otherwise be sealed by nothing: the gate elaboration's axiom audit and the
+# preserved log of the run that produced it.  The generator carries its own
+# entry, and this program produces the seal rather than being sealed by it.
+SUPPORT_DIRECTORIES = ("verification",)
+# The revision of the private monorepo holding the authoritative pre-extraction
+# sources.  It is not this package's own history: `source_commit` names the
+# commit of this repository whose sources the seal describes, and the two answer
+# different questions, so a manifest recording only one of them cannot say what
+# the sources were extracted from.
+AUTHORITY_COMMIT = "0ddbca6505cb2215457896bb2a0817c38b68802d"
 REV_RE = re.compile(
     r'\[\[require\]\]\s+name\s*=\s*"finitegeom".*?rev\s*=\s*"([0-9a-f]{40})"',
     re.DOTALL,
@@ -56,6 +67,16 @@ def render(source_commit: str) -> dict[str, object]:
         }
         for path in lean_files
     ]
+    support_files = [
+        {
+            "bytes": path.stat().st_size,
+            "path": str(path.relative_to(ROOT)),
+            "sha256": sha256(path),
+        }
+        for directory in SUPPORT_DIRECTORIES
+        for path in sorted((ROOT / directory).rglob("*"))
+        if path.is_file()
+    ]
     return {
         "schema_version": 1,
         "dependency": {
@@ -65,11 +86,13 @@ def render(source_commit: str) -> dict[str, object]:
         "module_count": len(sources),
         "roots": ROOTS,
         "sources": sources,
+        "support_files": support_files,
         "generator": {
             "bytes": GENERATOR.stat().st_size,
             "path": str(GENERATOR.relative_to(ROOT)),
             "sha256": sha256(GENERATOR),
         },
+        "authority_commit": AUTHORITY_COMMIT,
         "source_commit": source_commit,
     }
 

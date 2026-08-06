@@ -7,24 +7,40 @@ import RelativeConicArcs.Q11CodeRigidityBridge
 import RelativeConicArcs.ClebschChordDefect
 import RelativeConicArcs.Q9Sylvester
 import RelativeConicArcs.SmallKGeometricBridge
-import RelativeConicArcs.PaperIOrientationSpine
+import RelativeConicArcs.SupportOrientationSpine
 
 /-!
 # Trust gate for deep-hole rigidity of the Clebsch hexagon code
 
-This import-only module is the formal verification surface for the rigidity,
-decoding, chord-defect, field-uniqueness, small-arc classification, and
-support-cubic orientation results used by the focused Clebsch hexagon paper.
+This import-only module is the verification surface for the rigidity
+development together with the order-eleven certificates that instantiate it.
+Elaborating it prints the axiom dependencies of every terminal below: fifteen
+proved in this package's certificate modules
+`RelativeConicArcs.Examples.Q11A5PointOrbits` and
+`RelativeConicArcs.Examples.Q11Coding`, and forty proved in the upstream
+library this package pins.  The results covered are the deep-hole rigidity
+implication, the exact decoder and its ambiguity strata, the chord-defect
+moment identity and the field orders it admits, the four-, five- and
+seven-arc classifications, and the support-cubic orientation boundary.
 
-The coordinate modules check the displayed finite configuration and decoder
-tables by kernel reduction.  The rigidity conclusion additionally depends on
-the ten-point Brianchon bound and equality classification in R. H. Dye,
-“Hexagons, conics, \(A_5\) and \(\mathrm{PSL}_2(K)\),” *Journal of the
-London Mathematical Society* (2) 44 (1991), Theorems 1 and 3, pages 275--278,
-doi:10.1112/jlms/s2-44.2.270.  The small-arc bridge reduces the four-, five-,
-and seven-arc cases to exact secant moments; separate executable certificates
-discharge the finite geometric exclusions not covered by those symbolic
-reductions.
+The certificate modules check the displayed finite configuration, the
+code--arc dictionary, and the decoder tables over the field of eleven
+elements by kernel reduction: the orbit partition of the order-sixty action,
+the identification of each canonical point index with the projective point it
+denotes, the covering radius, the exact total syndrome distance, and the
+weight-two leader supports.  The small-arc bridge reduces the four-, five-,
+and seven-arc cases to exact secant moments, and the finite geometric
+exclusions those symbolic reductions leave open are discharged by the
+certificate modules rather than assumed.
+
+Nothing in the rigidity chain is taken from the literature as a hypothesis.
+The ten-point Brianchon bound and the equality classification that identifies
+a six-arc whose uncovered points lie on a conic are proved in the pinned
+upstream library and enter here as theorems.  They formalize results of
+R. H. Dye, “Hexagons, conics, \(A_5\) and \(\mathrm{PSL}_2(K)\),” *Journal of
+the London Mathematical Society* (2) 44 (1991), Theorems 1 and 3, pages
+275--278, doi:10.1112/jlms/s2-44.2.270, which is where the classical
+statements appear.
 
 The orientation spine constructs the antipodal cover, golden orbital,
 switching class, determinant pencil, trace dual, six ordinary nodes, and the
@@ -84,35 +100,35 @@ terminals.
 #print axioms RelativeConicArcs.SmallKGeometricBridge.sevenArc_primePower_conic_card_spectra
 
 -- The support-cubic line stabilizer and its oriented index-two subgroup.
-#print axioms RelativeConicArcs.PaperIOrientationSymmetry.mem_supportCubicProjectiveStabilizer_iff_cubicLine
-#print axioms RelativeConicArcs.PaperIOrientationSymmetry.supportCubic_projectiveStabilizer_equiv_S5
-#print axioms RelativeConicArcs.PaperIOrientationSymmetry.mem_orientedSupportCubicStabilizer_iff
-#print axioms RelativeConicArcs.PaperIOrientationSymmetry.orientedSupportCubic_stabilizer_equiv_A5
-#print axioms RelativeConicArcs.PaperIOrientationSymmetry.orientedSupportCubic_index_two
+#print axioms RelativeConicArcs.SupportOrientationSymmetry.mem_supportCubicProjectiveStabilizer_iff_cubicLine
+#print axioms RelativeConicArcs.SupportOrientationSymmetry.supportCubic_projectiveStabilizer_equiv_S5
+#print axioms RelativeConicArcs.SupportOrientationSymmetry.mem_orientedSupportCubicStabilizer_iff
+#print axioms RelativeConicArcs.SupportOrientationSymmetry.orientedSupportCubic_stabilizer_equiv_A5
+#print axioms RelativeConicArcs.SupportOrientationSymmetry.orientedSupportCubic_index_two
 
 -- The antipodal cover and signed golden orbital.
-#print axioms RelativeConicArcs.PaperIOrientationCover.antipodalQuotient_fiber_card_two
-#print axioms RelativeConicArcs.PaperIOrientationCover.fiveOrbitals_selfPaired
-#print axioms RelativeConicArcs.PaperIOrientationCover.fiveOrbital_one_mem_each_other_fiber
-#print axioms RelativeConicArcs.PaperIOrientationPentagon.signedOrbitalMatrix_sq
-#print axioms RelativeConicArcs.PaperIOrientationPentagon.orbitalDifference_sq_eq_ten_one_sub_deck
+#print axioms RelativeConicArcs.SupportOrientationCover.antipodalQuotient_fiber_card_two
+#print axioms RelativeConicArcs.SupportOrientationCover.fiveOrbitals_selfPaired
+#print axioms RelativeConicArcs.SupportOrientationCover.fiveOrbital_one_mem_each_other_fiber
+#print axioms RelativeConicArcs.SupportOrientationPentagon.signedOrbitalMatrix_sq
+#print axioms RelativeConicArcs.SupportOrientationPentagon.orbitalDifference_sq_eq_ten_one_sub_deck
 
 -- Switching holonomy and the determinant pencil.
-#print axioms RelativeConicArcs.PaperIOrientationHolonomy.supportSign_eq_triangleProduct
-#print axioms RelativeConicArcs.PaperIOrientationHolonomy.fourPoint_twoGraph_identity
-#print axioms RelativeConicArcs.PaperIOrientationHolonomy.pairBalance_iff_sq_five
-#print axioms RelativeConicArcs.PaperIOrientationHolonomy.supportCubic_translation_invariant
-#print axioms RelativeConicArcs.PaperIOrientationDeterminant.det_signedOrbital_add_diagonal
-#print axioms RelativeConicArcs.PaperIOrientationDeterminant.determinantPencil_oddPart_eq_supportCubic
+#print axioms RelativeConicArcs.SupportOrientationHolonomy.supportSign_eq_triangleProduct
+#print axioms RelativeConicArcs.SupportOrientationHolonomy.fourPoint_twoGraph_identity
+#print axioms RelativeConicArcs.SupportOrientationHolonomy.pairBalance_iff_sq_five
+#print axioms RelativeConicArcs.SupportOrientationHolonomy.supportCubic_translation_invariant
+#print axioms RelativeConicArcs.SupportOrientationDeterminant.det_signedOrbital_add_diagonal
+#print axioms RelativeConicArcs.SupportOrientationDeterminant.determinantPencil_oddPart_eq_supportCubic
 
 -- Cross-golden trace duality and the six ordinary nodes.
-#print axioms RelativeConicArcs.PaperIOrientationTraceDual.det_crossGoldenBlock_eq_neg_supportCubic
-#print axioms RelativeConicArcs.PaperIOrientationNodes.derivative_crossGoldenDeterminantLine_eval
-#print axioms RelativeConicArcs.PaperIOrientationNodes.singularPoints_crossGoldenDeterminant_eq_axisClasses
-#print axioms RelativeConicArcs.PaperIOrientationNodes.supportCubic_singularLocus_eq_frame
-#print axioms RelativeConicArcs.PaperIOrientationNodes.supportCubic_framePoints_ordinaryNodes
+#print axioms RelativeConicArcs.SupportOrientationTraceDual.det_crossGoldenBlock_eq_neg_supportCubic
+#print axioms RelativeConicArcs.SupportOrientationNodes.derivative_crossGoldenDeterminantLine_eval
+#print axioms RelativeConicArcs.SupportOrientationNodes.singularPoints_crossGoldenDeterminant_eq_axisClasses
+#print axioms RelativeConicArcs.SupportOrientationNodes.supportCubic_singularLocus_eq_frame
+#print axioms RelativeConicArcs.SupportOrientationNodes.supportCubic_framePoints_ordinaryNodes
 
 -- Rational and integral commutants relative to the classical splitting input.
-#print axioms RelativeConicArcs.PaperIOrientationCommutant.oddModule_rationalCommutant_eq_adjoin_B
-#print axioms RelativeConicArcs.PaperIOrientationCommutant.adjoinGolden_integralPoints_eq_ZsqrtFive
-#print axioms RelativeConicArcs.PaperIOrientationCommutant.oddLattice_integralCommutant_eq_ZsqrtFive
+#print axioms RelativeConicArcs.SupportOrientationCommutant.oddModule_rationalCommutant_eq_adjoinGoldenOperator
+#print axioms RelativeConicArcs.SupportOrientationCommutant.adjoinGolden_integralPoints_eq_ZsqrtFive
+#print axioms RelativeConicArcs.SupportOrientationCommutant.oddLattice_integralCommutant_eq_ZsqrtFive

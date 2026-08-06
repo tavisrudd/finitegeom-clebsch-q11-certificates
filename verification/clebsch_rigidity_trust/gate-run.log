@@ -1,7 +1,7 @@
-$ nix develop --command bash -lc export LEAN_NUM_THREADS=1; exec lake build --no-build 'RelativeConicArcs.Gates.ClebschRigidityTrust'
-ℹ [3014/3020] Replayed RelativeConicArcs.Conic
+$ lake build 'RelativeConicArcs.Gates.ClebschRigidityWithOrderElevenCertificates'
+ℹ [3014/3018] Replayed RelativeConicArcs.Conic
 info: RelativeConicArcs/Conic.lean:54:0: 'RelativeConicArcs.Conic.completeOutside_bound_general' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8659/8673] Replayed RelativeConicArcs.Q11BrianchonPetersen
+ℹ [8659/8823] Replayed RelativeConicArcs.Q11BrianchonPetersen
 info: RelativeConicArcs/Q11BrianchonPetersen.lean:354:0: 'RelativeConicArcs.Examples.Q11BrianchonPetersen.invariant_total_oneFactorization' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -14,7 +14,7 @@ info: RelativeConicArcs/Q11BrianchonPetersen.lean:356:0: 'RelativeConicArcs.Exam
 info: RelativeConicArcs/Q11BrianchonPetersen.lean:357:0: 'RelativeConicArcs.Examples.Q11BrianchonPetersen.petersen_parameters' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8773/8779] Replayed RelativeConicArcs.Q11A5PointOrbits
+ℹ [8773/8823] Replayed RelativeConicArcs.Q11A5PointOrbits
 info: RelativeConicArcs/Q11A5PointOrbits.lean:688:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.matrices_nonsingular' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -72,7 +72,7 @@ info: RelativeConicArcs/Q11A5PointOrbits.lean:705:0: 'RelativeConicArcs.Examples
 info: RelativeConicArcs/Q11A5PointOrbits.lean:706:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.triplePointSet_invariant' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8774/8779] Replayed RelativeConicArcs.Q11DecodingSynthesis
+ℹ [8774/8823] Replayed RelativeConicArcs.Q11DecodingSynthesis
 info: RelativeConicArcs/Q11DecodingSynthesis.lean:285:0: 'RelativeConicArcs.Examples.Q11Coding.totalSyndromeDistance_exact' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -98,7 +98,7 @@ info: RelativeConicArcs/Q11DecodingSynthesis.lean:292:0: 'RelativeConicArcs.Exam
 info: RelativeConicArcs/Q11DecodingSynthesis.lean:293:0: 'RelativeConicArcs.Examples.Q11Coding.brianchon_weightTwo_leaderSupports' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8775/8779] Replayed RelativeConicArcs.ClebschChordDefect
+ℹ [8775/8823] Replayed RelativeConicArcs.ClebschChordDefect
 info: RelativeConicArcs/ClebschChordDefect.lean:170:0: 'RelativeConicArcs.ClebschChordDefect.card_sixVertexPerfectMatchings' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -112,34 +112,73 @@ info: RelativeConicArcs/ClebschChordDefect.lean:173:0: 'RelativeConicArcs.Clebsc
 info: RelativeConicArcs/ClebschChordDefect.lean:174:0: 'RelativeConicArcs.ClebschChordDefect.primePower_candidates_of_chordDefect' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8776/8779] Replayed RelativeConicArcs.Q11DyeAxioms
-info: RelativeConicArcs/Q11DyeAxioms.lean:62:0: 'RelativeConicArcs.ClebschDye.dye1991_brianchon_bound' depends on axioms: [propext,
+⚠ [8776/8823] Replayed RelativeConicArcs.FrameCoordinates
+warning: RelativeConicArcs/FrameCoordinates.lean:115:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RelativeConicArcs/FrameCoordinates.lean:119:34: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [zero_smul, add_zero,̵ ̵z̵e̵r̵o̵_̵a̵d̵d̵] at hrep
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ℹ [8777/8823] Replayed RelativeConicArcs.GoldenHexagonNormalForm
+info: RelativeConicArcs/GoldenHexagonNormalForm.lean:435:0: 'RelativeConicArcs.GoldenHexagonNormalForm.golden_normal_form_of_concurrent_matchings' depends on axioms: [propext,
  Classical.choice,
- Quot.sound,
- dye1991_brianchon_bound]
-info: RelativeConicArcs/Q11DyeAxioms.lean:63:0: 'RelativeConicArcs.ClebschDye.dye1991_equality_classification' depends on axioms: [propext,
+ Quot.sound]
+⚠ [8778/8823] Replayed RelativeConicArcs.SixArcConcurrence
+warning: RelativeConicArcs/SixArcConcurrence.lean:43:0: automatically included section variable(s) unused in theorem `RelativeConicArcs.SixArcConcurrence.mem_triplePoints`:
+  [DecidableEq L]
+  [ProjectivePlane P L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq L] [ProjectivePlane P L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RelativeConicArcs/SixArcConcurrence.lean:239:0: automatically included section variable(s) unused in theorem `RelativeConicArcs.SixArcConcurrence.not_collinear_common_chord`:
+  [Fintype P]
+  [Fintype L]
+  [DecidableEq L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype P] [Fintype L] [DecidableEq L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ℹ [8781/8823] Replayed RelativeConicArcs.QuadrangleDiagonal
+info: RelativeConicArcs/QuadrangleDiagonal.lean:410:0: 'RelativeConicArcs.QuadrangleDiagonal.not_collinear_diagonalPoints' depends on axioms: [propext,
  Classical.choice,
- Quot.sound,
- dye1991_equality_classification]
-ℹ [8778/8814] Replayed RelativeConicArcs.SixArcDefectBridge
+ Quot.sound]
+ℹ [8782/8823] Replayed RelativeConicArcs.SixArcConcurrenceBound
+info: RelativeConicArcs/SixArcConcurrenceBound.lean:118:0: 'RelativeConicArcs.SixArcConcurrence.card_triplePoints_le_ten' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8785/8823] Replayed RelativeConicArcs.Q11GoldenHexagonWitness
+info: RelativeConicArcs/Q11GoldenHexagonWitness.lean:199:0: 'RelativeConicArcs.Q11GoldenHexagonWitness.exists_mapEquiv_toWitness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8786/8823] Replayed RelativeConicArcs.Q11DyeAxioms
+info: RelativeConicArcs/Q11DyeAxioms.lean:87:0: 'RelativeConicArcs.ClebschDye.dye1991_brianchon_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: RelativeConicArcs/Q11DyeAxioms.lean:88:0: 'RelativeConicArcs.ClebschDye.dye1991_equality_classification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8787/8823] Replayed RelativeConicArcs.SixArcDefectBridge
 info: RelativeConicArcs/SixArcDefectBridge.lean:132:0: 'RelativeConicArcs.ClebschDye.sixArc_uncovered_add_brianchon_card' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8779/8814] Replayed RelativeConicArcs.Q11DyeConsequences
+ℹ [8788/8823] Replayed RelativeConicArcs.Q11DyeConsequences
 info: RelativeConicArcs/Q11DyeConsequences.lean:57:0: 'RelativeConicArcs.ClebschDye.sixArc_twelve_le_uncovered_card' depends on axioms: [propext,
  Classical.choice,
- Quot.sound,
- dye1991_brianchon_bound]
+ Quot.sound]
 info: RelativeConicArcs/Q11DyeConsequences.lean:58:0: 'RelativeConicArcs.ClebschDye.sixArc_cards_of_uncovered_subset_conic' depends on axioms: [propext,
  Classical.choice,
- Quot.sound,
- dye1991_brianchon_bound]
+ Quot.sound]
 info: RelativeConicArcs/Q11DyeConsequences.lean:59:0: 'RelativeConicArcs.ClebschDye.isClebschHexagon_of_uncovered_subset_conic' depends on axioms: [propext,
  Classical.choice,
- Quot.sound,
- dye1991_brianchon_bound,
- dye1991_equality_classification]
-⚠ [8780/8814] Replayed RelativeConicArcs.OddSixArcLineBound
+ Quot.sound]
+⚠ [8789/8823] Replayed RelativeConicArcs.OddSixArcLineBound
 warning: RelativeConicArcs/OddSixArcLineBound.lean:65:8: automatically included section variable(s) unused in theorem `RelativeConicArcs.OddSixArcLineBound.mem_ordinaryUncovered`:
   [DecidableEq L]
   [ProjectivePlane P L]
@@ -211,11 +250,11 @@ info: RelativeConicArcs/OddSixArcLineBound.lean:553:0: 'RelativeConicArcs.OddSix
 info: RelativeConicArcs/OddSixArcLineBound.lean:554:0: 'RelativeConicArcs.OddSixArcLineBound.uncoveredOnLine_card_le_order_sub_five' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8781/8814] Replayed RelativeConicArcs.ProjectiveTripleNormalization
+ℹ [8790/8823] Replayed RelativeConicArcs.ProjectiveTripleNormalization
 info: RelativeConicArcs/ProjectiveTripleNormalization.lean:124:0: 'RelativeConicArcs.ProjectiveTripleNormalization.exists_mapEquiv_ordered_triple' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-⚠ [8782/8814] Replayed RelativeConicArcs.OddSixArcAffinePrism
+⚠ [8791/8823] Replayed RelativeConicArcs.OddSixArcAffinePrism
 warning: RelativeConicArcs/OddSixArcAffinePrism.lean:202:6: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
@@ -258,7 +297,7 @@ info: RelativeConicArcs/OddSixArcAffinePrism.lean:234:0: 'RelativeConicArcs.OddS
 info: RelativeConicArcs/OddSixArcAffinePrism.lean:235:0: 'RelativeConicArcs.OddSixArcAffinePrism.triangularPrism_impossible' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8783/8814] Replayed RelativeConicArcs.SixVertexOneFactorization
+ℹ [8792/8823] Replayed RelativeConicArcs.SixVertexOneFactorization
 info: RelativeConicArcs/SixVertexOneFactorization.lean:505:0: 'RelativeConicArcs.SixVertexOneFactorization.oneFactorization_has_triangularPrism_normalForm' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -274,50 +313,50 @@ info: RelativeConicArcs/SixVertexOneFactorization.lean:508:0: 'RelativeConicArcs
 info: RelativeConicArcs/SixVertexOneFactorization.lean:509:0: 'RelativeConicArcs.SixVertexOneFactorization.properFiveEdgeColoring_extract_prism_edges' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-⚠ [8784/8814] Replayed RelativeConicArcs.OddSixArcPrismExtraction
-warning: RelativeConicArcs/OddSixArcPrismExtraction.lean:43:0: automatically included section variable(s) unused in theorem `RelativeConicArcs.OddSixArcPrismExtraction.canonicalLabel_injective`:
+⚠ [8793/8823] Replayed RelativeConicArcs.OddSixArcPrismExtraction
+warning: RelativeConicArcs/OddSixArcPrismExtraction.lean:46:0: automatically included section variable(s) unused in theorem `RelativeConicArcs.OddSixArcPrismExtraction.chosenLabel_injective`:
   [Fintype K]
   [DecidableEq K]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [Fintype K] [DecidableEq K] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: RelativeConicArcs/OddSixArcPrismExtraction.lean:48:0: automatically included section variable(s) unused in theorem `RelativeConicArcs.OddSixArcPrismExtraction.mem_iff_exists_canonicalLabel`:
+warning: RelativeConicArcs/OddSixArcPrismExtraction.lean:51:0: automatically included section variable(s) unused in theorem `RelativeConicArcs.OddSixArcPrismExtraction.mem_iff_exists_chosenLabel`:
   [Fintype K]
   [DecidableEq K]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [Fintype K] [DecidableEq K] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: RelativeConicArcs/OddSixArcPrismExtraction.lean:411:28: Variable name `hA` is not explicitly referenced.
+warning: RelativeConicArcs/OddSixArcPrismExtraction.lean:414:28: Variable name `hA` is not explicitly referenced.
 
 The binding can be removed (if unused) or named `_` (if used implicitly).
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: RelativeConicArcs/OddSixArcPrismExtraction.lean:411:56: Variable name `hcard` is not explicitly referenced.
+warning: RelativeConicArcs/OddSixArcPrismExtraction.lean:414:56: Variable name `hcard` is not explicitly referenced.
 
 The binding can be removed (if unused) or named `_` (if used implicitly).
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-info: RelativeConicArcs/OddSixArcPrismExtraction.lean:455:0: 'RelativeConicArcs.OddSixArcPrismExtraction.incidencePrismWitness_of_five' depends on axioms: [propext,
+info: RelativeConicArcs/OddSixArcPrismExtraction.lean:458:0: 'RelativeConicArcs.OddSixArcPrismExtraction.incidencePrismWitness_of_five' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/OddSixArcPrismExtraction.lean:456:0: 'RelativeConicArcs.OddSixArcPrismExtraction.projectivePrismWitness_of_incidence' depends on axioms: [propext,
+info: RelativeConicArcs/OddSixArcPrismExtraction.lean:459:0: 'RelativeConicArcs.OddSixArcPrismExtraction.projectivePrismWitness_of_incidence' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/OddSixArcPrismExtraction.lean:457:0: 'RelativeConicArcs.OddSixArcPrismExtraction.card_coveredOnLine_ne_five_of_incidence_extraction' depends on axioms: [propext,
+info: RelativeConicArcs/OddSixArcPrismExtraction.lean:460:0: 'RelativeConicArcs.OddSixArcPrismExtraction.card_coveredOnLine_ne_five_of_incidence_extraction' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/OddSixArcPrismExtraction.lean:458:0: 'RelativeConicArcs.OddSixArcPrismExtraction.card_coveredOnLine_ne_five' depends on axioms: [propext,
+info: RelativeConicArcs/OddSixArcPrismExtraction.lean:461:0: 'RelativeConicArcs.OddSixArcPrismExtraction.card_coveredOnLine_ne_five' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/OddSixArcPrismExtraction.lean:459:0: 'RelativeConicArcs.OddSixArcPrismExtraction.disjointLine_fiveUncovered_impossible' depends on axioms: [propext,
+info: RelativeConicArcs/OddSixArcPrismExtraction.lean:462:0: 'RelativeConicArcs.OddSixArcPrismExtraction.disjointLine_fiveUncovered_impossible' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/OddSixArcPrismExtraction.lean:460:0: 'RelativeConicArcs.OddSixArcPrismExtraction.sixArc_uncoveredOnLine_card_le_order_sub_five' depends on axioms: [propext,
+info: RelativeConicArcs/OddSixArcPrismExtraction.lean:463:0: 'RelativeConicArcs.OddSixArcPrismExtraction.sixArc_uncoveredOnLine_card_le_order_sub_five' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8785/8814] Replayed RelativeConicArcs.SixArcDegenerateConicExclusion
+ℹ [8794/8823] Replayed RelativeConicArcs.SixArcDegenerateConicExclusion
 info: RelativeConicArcs/SixArcDegenerateConicExclusion.lean:118:0: 'RelativeConicArcs.ClebschDye.sixArc_uncoveredOnLine_card_le_six' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -327,66 +366,64 @@ info: RelativeConicArcs/SixArcDegenerateConicExclusion.lean:119:0: 'RelativeConi
 info: RelativeConicArcs/SixArcDegenerateConicExclusion.lean:120:0: 'RelativeConicArcs.ClebschDye.sixArc_uncovered_card_le_twelve_of_subset_planeQuadraticLocus' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8786/8814] Replayed RelativeConicArcs.Q11RigiditySpine
+ℹ [8795/8823] Replayed RelativeConicArcs.Q11RigiditySpine
 info: RelativeConicArcs/Q11RigiditySpine.lean:44:0: 'RelativeConicArcs.ClebschDye.isClebschHexagon_of_uncovered_subset_planeConic' depends on axioms: [propext,
  Classical.choice,
- Quot.sound,
- dye1991_brianchon_bound,
- dye1991_equality_classification]
-⚠ [8787/8814] Replayed RelativeConicArcs.ClebschGateway
-warning: RelativeConicArcs/ClebschGateway.lean:39:8: automatically included section variable(s) unused in theorem `RelativeConicArcs.ClebschGateway.mem_deepTransform`:
+ Quot.sound]
+⚠ [8796/8823] Replayed RelativeConicArcs.ClebschGateway
+warning: RelativeConicArcs/ClebschGateway.lean:41:8: automatically included section variable(s) unused in theorem `RelativeConicArcs.ClebschGateway.mem_deepTransform`:
   [DecidableEq L]
   [ProjectivePlane P L]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq L] [ProjectivePlane P L] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: RelativeConicArcs/ClebschGateway.lean:44:0: automatically included section variable(s) unused in theorem `RelativeConicArcs.ClebschGateway.oneColumnArcExtension_iff_mem_deepTransform`:
+warning: RelativeConicArcs/ClebschGateway.lean:46:0: automatically included section variable(s) unused in theorem `RelativeConicArcs.ClebschGateway.oneColumnArcExtension_iff_mem_deepTransform`:
   [DecidableEq L]
   [ProjectivePlane P L]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq L] [ProjectivePlane P L] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: RelativeConicArcs/ClebschGateway.lean:68:0: automatically included section variable(s) unused in theorem `RelativeConicArcs.ClebschGateway.appendPoint_injective`:
+warning: RelativeConicArcs/ClebschGateway.lean:72:0: automatically included section variable(s) unused in theorem `RelativeConicArcs.ClebschGateway.appendPoint_injective`:
   [DecidableEq K]
   [DecidableEq ι]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq K] [DecidableEq ι] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: RelativeConicArcs/ClebschGateway.lean:88:0: automatically included section variable(s) unused in theorem `RelativeConicArcs.ClebschGateway.image_appendPoint`:
+warning: RelativeConicArcs/ClebschGateway.lean:92:0: automatically included section variable(s) unused in theorem `RelativeConicArcs.ClebschGateway.image_appendPoint`:
   [DecidableEq K]
   [DecidableEq ι]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq K] [DecidableEq ι] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: RelativeConicArcs/ClebschGateway.lean:105:0: automatically included section variable(s) unused in theorem `RelativeConicArcs.ClebschGateway.codimThreeMDSColumns_of_arc`:
+warning: RelativeConicArcs/ClebschGateway.lean:109:0: automatically included section variable(s) unused in theorem `RelativeConicArcs.ClebschGateway.codimThreeMDSColumns_of_arc`:
   [DecidableEq ι]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [DecidableEq ι] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: RelativeConicArcs/ClebschGateway.lean:194:8: automatically included section variable(s) unused in theorem `_private.RelativeConicArcs.ClebschGateway.0.RelativeConicArcs.ClebschGateway.gateway_normalized_rep`:
+warning: RelativeConicArcs/ClebschGateway.lean:198:8: automatically included section variable(s) unused in theorem `_private.RelativeConicArcs.ClebschGateway.0.RelativeConicArcs.ClebschGateway.gateway_normalized_rep`:
   [Fintype K]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [Fintype K] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-info: RelativeConicArcs/ClebschGateway.lean:385:0: 'RelativeConicArcs.ClebschGateway.oneColumnArcExtension_iff_mem_deepTransform' depends on axioms: [propext,
+info: RelativeConicArcs/ClebschGateway.lean:392:0: 'RelativeConicArcs.ClebschGateway.oneColumnArcExtension_iff_mem_deepTransform' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/ClebschGateway.lean:386:0: 'RelativeConicArcs.ClebschGateway.oneColumnMDS_of_mem_deepTransform' depends on axioms: [propext,
+info: RelativeConicArcs/ClebschGateway.lean:393:0: 'RelativeConicArcs.ClebschGateway.oneColumnMDS_of_mem_deepTransform' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/ClebschGateway.lean:387:0: 'RelativeConicArcs.ClebschGateway.rawArc_complete_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: RelativeConicArcs/ClebschGateway.lean:388:0: 'RelativeConicArcs.ClebschGateway.DecoratedTransform.recovers_parent' does not depend on any axioms
-info: RelativeConicArcs/ClebschGateway.lean:389:0: 'RelativeConicArcs.ClebschGateway.s5_quotientCharacter_inference' depends on axioms: [propext,
+info: RelativeConicArcs/ClebschGateway.lean:394:0: 'RelativeConicArcs.ClebschGateway.rawArc_complete_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: RelativeConicArcs/ClebschGateway.lean:395:0: 'RelativeConicArcs.ClebschGateway.DecoratedTransform.recovers_parent' does not depend on any axioms
+info: RelativeConicArcs/ClebschGateway.lean:396:0: 'RelativeConicArcs.ClebschGateway.s5_quotientCharacter_inference' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/ClebschGateway.lean:390:0: 'RelativeConicArcs.ClebschGateway.OrbitClassifier.fuse' does not depend on any axioms
-ℹ [8788/8814] Replayed RelativeConicArcs.ClebschGatewayQ11Extension
+info: RelativeConicArcs/ClebschGateway.lean:397:0: 'RelativeConicArcs.ClebschGateway.OrbitClassifier.fuse' does not depend on any axioms
+ℹ [8797/8823] Replayed RelativeConicArcs.ClebschGatewayQ11Extension
 info: RelativeConicArcs/ClebschGatewayQ11Extension.lean:111:0: 'RelativeConicArcs.ClebschGateway.Q11Extension.parent_deepTransform_eq_standardConic' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -396,7 +433,7 @@ info: RelativeConicArcs/ClebschGatewayQ11Extension.lean:112:0: 'RelativeConicArc
 info: RelativeConicArcs/ClebschGatewayQ11Extension.lean:113:0: 'RelativeConicArcs.ClebschGateway.Q11Extension.conicPoint_extension_minimumDistance_four' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-⚠ [8789/8814] Replayed RelativeConicArcs.Q11CodeRigidityBridge
+⚠ [8798/8823] Replayed RelativeConicArcs.Q11CodeRigidityBridge
 warning: RelativeConicArcs/Q11CodeRigidityBridge.lean:183:10: This simp argument is unused:
   mul_assoc
 
@@ -449,17 +486,15 @@ info: RelativeConicArcs/Q11CodeRigidityBridge.lean:306:0: 'RelativeConicArcs.Cle
 info: RelativeConicArcs/Q11CodeRigidityBridge.lean:307:0: 'RelativeConicArcs.ClebschDye.syndromeDistanceExactly_iff_exists_minimumLeader' depends on axioms: [propext, Quot.sound]
 info: RelativeConicArcs/Q11CodeRigidityBridge.lean:308:0: 'RelativeConicArcs.ClebschDye.deepHoleLocus_rigidifies_witnessCode' depends on axioms: [propext,
  Classical.choice,
- Quot.sound,
- dye1991_brianchon_bound,
- dye1991_equality_classification]
-ℹ [8790/8814] Replayed RelativeConicArcs.Q9Sylvester
+ Quot.sound]
+ℹ [8799/8823] Replayed RelativeConicArcs.Q9Sylvester
 info: RelativeConicArcs/Q9Sylvester.lean:364:0: 'RelativeConicArcs.Q9Sylvester.catalog_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: RelativeConicArcs/Q9Sylvester.lean:365:0: 'RelativeConicArcs.Q9Sylvester.conic_point_count' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: RelativeConicArcs/Q9Sylvester.lean:366:0: 'RelativeConicArcs.Q9Sylvester.passantJoin_iff_distance_two' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: RelativeConicArcs/Q9Sylvester.lean:367:0: 'RelativeConicArcs.Q9Sylvester.distanceTwo_clique_number_five' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8791/8814] Replayed RelativeConicArcs.SmallKChordMoments
+ℹ [8800/8823] Replayed RelativeConicArcs.SmallKChordMoments
 info: RelativeConicArcs/SmallKChordMoments.lean:213:0: 'RelativeConicArcs.SmallKChordMoments.uncovered_of_three_index_moments' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -478,7 +513,7 @@ info: RelativeConicArcs/SmallKChordMoments.lean:217:0: 'RelativeConicArcs.SmallK
 info: RelativeConicArcs/SmallKChordMoments.lean:218:0: 'RelativeConicArcs.SmallKChordMoments.sevenArc_primePower_spectra_of_moments' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8792/8814] Replayed RelativeConicArcs.SmallKGeometricBridge
+ℹ [8801/8823] Replayed RelativeConicArcs.SmallKGeometricBridge
 info: RelativeConicArcs/SmallKGeometricBridge.lean:409:0: 'RelativeConicArcs.SmallKGeometricBridge.fourArc_uncovered_card' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -497,139 +532,139 @@ info: RelativeConicArcs/SmallKGeometricBridge.lean:413:0: 'RelativeConicArcs.Sma
 info: RelativeConicArcs/SmallKGeometricBridge.lean:414:0: 'RelativeConicArcs.SmallKGeometricBridge.sevenArc_primePower_conic_card_spectra' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8796/8814] Replayed RelativeConicArcs.PaperIOrientationCover
-info: RelativeConicArcs/PaperIOrientationCover.lean:294:0: 'RelativeConicArcs.PaperIOrientationCover.antipodalQuotient_fiber_card_two' depends on axioms: [propext,
+ℹ [8805/8823] Replayed RelativeConicArcs.SupportOrientationCover
+info: RelativeConicArcs/SupportOrientationCover.lean:294:0: 'RelativeConicArcs.SupportOrientationCover.antipodalQuotient_fiber_card_two' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationCover.lean:295:0: 'RelativeConicArcs.PaperIOrientationCover.antipodalCosetCover_fiber_card_two' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationCover.lean:295:0: 'RelativeConicArcs.SupportOrientationCover.antipodalCosetCover_fiber_card_two' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationCover.lean:296:0: 'RelativeConicArcs.PaperIOrientationCover.fiveOrbitalElements_card' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationCover.lean:296:0: 'RelativeConicArcs.SupportOrientationCover.fiveOrbitalElements_card' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationCover.lean:297:0: 'RelativeConicArcs.PaperIOrientationCover.FiveOrbital.inverse_closed' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationCover.lean:297:0: 'RelativeConicArcs.SupportOrientationCover.FiveOrbital.inverse_closed' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationCover.lean:298:0: 'RelativeConicArcs.PaperIOrientationCover.fiveOrbitals_selfPaired' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationCover.lean:298:0: 'RelativeConicArcs.SupportOrientationCover.fiveOrbitals_selfPaired' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationCover.lean:299:0: 'RelativeConicArcs.PaperIOrientationCover.fiveOrbitals_card_five' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationCover.lean:299:0: 'RelativeConicArcs.SupportOrientationCover.fiveOrbitals_card_five' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationCover.lean:300:0: 'RelativeConicArcs.PaperIOrientationCover.fiveOrbital_one_mem_each_other_fiber' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationCover.lean:300:0: 'RelativeConicArcs.SupportOrientationCover.fiveOrbital_one_mem_each_other_fiber' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8798/8814] Replayed RelativeConicArcs.PaperIOrientationPentagon
-info: RelativeConicArcs/PaperIOrientationPentagon.lean:215:0: 'RelativeConicArcs.PaperIOrientationPentagon.liftChange_eq_diagonalSwitch' depends on axioms: [propext, Quot.sound]
-info: RelativeConicArcs/PaperIOrientationPentagon.lean:216:0: 'RelativeConicArcs.PaperIOrientationPentagon.rawAxisRepresentative_mem_implies_orbital' depends on axioms: [propext,
+ℹ [8807/8823] Replayed RelativeConicArcs.SupportOrientationPentagon
+info: RelativeConicArcs/SupportOrientationPentagon.lean:215:0: 'RelativeConicArcs.SupportOrientationPentagon.liftChange_eq_diagonalSwitch' depends on axioms: [propext, Quot.sound]
+info: RelativeConicArcs/SupportOrientationPentagon.lean:216:0: 'RelativeConicArcs.SupportOrientationPentagon.rawAxisRepresentative_mem_implies_orbital' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationPentagon.lean:217:0: 'RelativeConicArcs.PaperIOrientationPentagon.rawFiberOddOrbitalMatrix_eq_conference_transport' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationPentagon.lean:217:0: 'RelativeConicArcs.SupportOrientationPentagon.rawFiberOddOrbitalMatrix_eq_conference_transport' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationPentagon.lean:218:0: 'RelativeConicArcs.PaperIOrientationPentagon.rawOrbitalExchange_eq_neg' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationPentagon.lean:218:0: 'RelativeConicArcs.SupportOrientationPentagon.rawOrbitalExchange_eq_neg' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationPentagon.lean:219:0: 'RelativeConicArcs.PaperIOrientationPentagon.orbitalExchange_eq_neg' depends on axioms: [propext, Quot.sound]
-info: RelativeConicArcs/PaperIOrientationPentagon.lean:220:0: 'RelativeConicArcs.PaperIOrientationPentagon.normalized_pentagon_side_diagonal_opposite' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationPentagon.lean:219:0: 'RelativeConicArcs.SupportOrientationPentagon.orbitalExchange_eq_neg' depends on axioms: [propext, Quot.sound]
+info: RelativeConicArcs/SupportOrientationPentagon.lean:220:0: 'RelativeConicArcs.SupportOrientationPentagon.normalized_pentagon_side_diagonal_opposite' depends on axioms: [propext,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationPentagon.lean:221:0: 'RelativeConicArcs.PaperIOrientationPentagon.pentagonNext_orbit_surjective' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationPentagon.lean:221:0: 'RelativeConicArcs.SupportOrientationPentagon.pentagonNext_orbit_surjective' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationPentagon.lean:222:0: 'RelativeConicArcs.PaperIOrientationPentagon.A5_no_sign_quotient' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationPentagon.lean:222:0: 'RelativeConicArcs.SupportOrientationPentagon.A5_no_sign_quotient' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationPentagon.lean:223:0: 'RelativeConicArcs.PaperIOrientationPentagon.signedOrbitalMatrix_sq' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationPentagon.lean:223:0: 'RelativeConicArcs.SupportOrientationPentagon.signedOrbitalMatrix_sq' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationPentagon.lean:224:0: 'RelativeConicArcs.PaperIOrientationPentagon.orbitalDifference_sq_eq_ten_one_sub_deck' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationPentagon.lean:224:0: 'RelativeConicArcs.SupportOrientationPentagon.orbitalDifference_sq_eq_ten_one_sub_deck' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8799/8814] Replayed RelativeConicArcs.PaperIOrientationHolonomy
-info: RelativeConicArcs/PaperIOrientationHolonomy.lean:148:0: 'RelativeConicArcs.PaperIOrientationHolonomy.supportSign_eq_triangleProduct' depends on axioms: [propext, Quot.sound]
-info: RelativeConicArcs/PaperIOrientationHolonomy.lean:149:0: 'RelativeConicArcs.PaperIOrientationHolonomy.supportSign_switching_invariant' depends on axioms: [propext, Quot.sound]
-info: RelativeConicArcs/PaperIOrientationHolonomy.lean:150:0: 'RelativeConicArcs.PaperIOrientationHolonomy.fiberOddOrbitalMatrix_transpose' depends on axioms: [propext,
+ℹ [8808/8823] Replayed RelativeConicArcs.SupportOrientationHolonomy
+info: RelativeConicArcs/SupportOrientationHolonomy.lean:148:0: 'RelativeConicArcs.SupportOrientationHolonomy.supportSign_eq_triangleProduct' depends on axioms: [propext, Quot.sound]
+info: RelativeConicArcs/SupportOrientationHolonomy.lean:149:0: 'RelativeConicArcs.SupportOrientationHolonomy.supportSign_switching_invariant' depends on axioms: [propext, Quot.sound]
+info: RelativeConicArcs/SupportOrientationHolonomy.lean:150:0: 'RelativeConicArcs.SupportOrientationHolonomy.fiberOddOrbitalMatrix_transpose' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationHolonomy.lean:151:0: 'RelativeConicArcs.PaperIOrientationHolonomy.fourPoint_twoGraph_identity' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationHolonomy.lean:151:0: 'RelativeConicArcs.SupportOrientationHolonomy.fourPoint_twoGraph_identity' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationHolonomy.lean:152:0: 'RelativeConicArcs.PaperIOrientationHolonomy.supportSign_reconstructs_switchingClass' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationHolonomy.lean:152:0: 'RelativeConicArcs.SupportOrientationHolonomy.supportSign_reconstructs_switchingClass' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationHolonomy.lean:153:0: 'RelativeConicArcs.PaperIOrientationHolonomy.positivePentagonNeighbors_card_two' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationHolonomy.lean:153:0: 'RelativeConicArcs.SupportOrientationHolonomy.positivePentagonNeighbors_card_two' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationHolonomy.lean:154:0: 'RelativeConicArcs.PaperIOrientationHolonomy.pairBalance_iff_sq_five' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationHolonomy.lean:154:0: 'RelativeConicArcs.SupportOrientationHolonomy.pairBalance_iff_sq_five' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationHolonomy.lean:155:0: 'RelativeConicArcs.PaperIOrientationHolonomy.supportMomentTwo_eq_zero' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationHolonomy.lean:155:0: 'RelativeConicArcs.SupportOrientationHolonomy.supportMomentTwo_eq_zero' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationHolonomy.lean:156:0: 'RelativeConicArcs.PaperIOrientationHolonomy.supportMomentOne_eq_zero' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationHolonomy.lean:156:0: 'RelativeConicArcs.SupportOrientationHolonomy.supportMomentOne_eq_zero' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationHolonomy.lean:157:0: 'RelativeConicArcs.PaperIOrientationHolonomy.supportMomentZero_eq_zero' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationHolonomy.lean:157:0: 'RelativeConicArcs.SupportOrientationHolonomy.supportMomentZero_eq_zero' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationHolonomy.lean:158:0: 'RelativeConicArcs.PaperIOrientationHolonomy.supportCubic_translation_invariant' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationHolonomy.lean:158:0: 'RelativeConicArcs.SupportOrientationHolonomy.supportCubic_translation_invariant' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8800/8814] Replayed RelativeConicArcs.PaperIOrientationDeterminant
-info: RelativeConicArcs/PaperIOrientationDeterminant.lean:736:0: 'RelativeConicArcs.PaperIOrientationDeterminant.det_signed_three' depends on axioms: [propext,
+ℹ [8809/8823] Replayed RelativeConicArcs.SupportOrientationDeterminant
+info: RelativeConicArcs/SupportOrientationDeterminant.lean:736:0: 'RelativeConicArcs.SupportOrientationDeterminant.det_signed_three' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationDeterminant.lean:737:0: 'RelativeConicArcs.PaperIOrientationDeterminant.det_principal_three' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationDeterminant.lean:737:0: 'RelativeConicArcs.SupportOrientationDeterminant.det_principal_three' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationDeterminant.lean:738:0: 'RelativeConicArcs.PaperIOrientationDeterminant.det_principalMinorFive' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationDeterminant.lean:738:0: 'RelativeConicArcs.SupportOrientationDeterminant.det_principalMinorFive' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationDeterminant.lean:739:0: 'RelativeConicArcs.PaperIOrientationDeterminant.det_principalMinorFour' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationDeterminant.lean:739:0: 'RelativeConicArcs.SupportOrientationDeterminant.det_principalMinorFour' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationDeterminant.lean:740:0: 'RelativeConicArcs.PaperIOrientationDeterminant.det_signedOrbitalMatrix' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationDeterminant.lean:740:0: 'RelativeConicArcs.SupportOrientationDeterminant.det_signedOrbitalMatrix' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationDeterminant.lean:741:0: 'RelativeConicArcs.PaperIOrientationDeterminant.det_signedOrbital_add_diagonal' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationDeterminant.lean:741:0: 'RelativeConicArcs.SupportOrientationDeterminant.det_signedOrbital_add_diagonal' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationDeterminant.lean:742:0: 'RelativeConicArcs.PaperIOrientationDeterminant.determinantPencil_oddPart_eq_supportCubic' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationDeterminant.lean:742:0: 'RelativeConicArcs.SupportOrientationDeterminant.determinantPencil_oddPart_eq_supportCubic' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8801/8814] Replayed RelativeConicArcs.PaperIOrientationTraceDual
-info: RelativeConicArcs/PaperIOrientationTraceDual.lean:322:0: 'RelativeConicArcs.PaperIOrientationTraceDual.goldenEigenspaceBasis_eigen' depends on axioms: [propext,
+ℹ [8810/8823] Replayed RelativeConicArcs.SupportOrientationTraceDual
+info: RelativeConicArcs/SupportOrientationTraceDual.lean:324:0: 'RelativeConicArcs.SupportOrientationTraceDual.goldenEigenspaceBasis_eigen' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationTraceDual.lean:323:0: 'RelativeConicArcs.PaperIOrientationTraceDual.goldenEigenspaceBasis_eq_paper_transport' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationTraceDual.lean:325:0: 'RelativeConicArcs.SupportOrientationTraceDual.goldenEigenspaceBasis_eq_displayed_transport' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationTraceDual.lean:324:0: 'RelativeConicArcs.PaperIOrientationTraceDual.paperConferenceMatrix_eq_transport' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationTraceDual.lean:326:0: 'RelativeConicArcs.SupportOrientationTraceDual.displayedConferenceMatrix_eq_transport' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationTraceDual.lean:325:0: 'RelativeConicArcs.PaperIOrientationTraceDual.conjugateGoldenBases_orthogonal' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationTraceDual.lean:327:0: 'RelativeConicArcs.SupportOrientationTraceDual.conjugateGoldenBases_orthogonal' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationTraceDual.lean:326:0: 'RelativeConicArcs.PaperIOrientationTraceDual.crossGoldenBlock_translation_invariant' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationTraceDual.lean:328:0: 'RelativeConicArcs.SupportOrientationTraceDual.crossGoldenBlock_translation_invariant' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationTraceDual.lean:327:0: 'RelativeConicArcs.PaperIOrientationTraceDual.crossGoldenMap_mem_ker_iff_constant' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationTraceDual.lean:329:0: 'RelativeConicArcs.SupportOrientationTraceDual.crossGoldenMap_mem_ker_iff_constant' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationTraceDual.lean:328:0: 'RelativeConicArcs.PaperIOrientationTraceDual.finrank_crossGoldenMap_range' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationTraceDual.lean:330:0: 'RelativeConicArcs.SupportOrientationTraceDual.finrank_crossGoldenMap_range' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationTraceDual.lean:329:0: 'RelativeConicArcs.PaperIOrientationTraceDual.tracePairing_nondegenerate' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationTraceDual.lean:331:0: 'RelativeConicArcs.SupportOrientationTraceDual.tracePairing_nondegenerate' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationTraceDual.lean:330:0: 'RelativeConicArcs.PaperIOrientationTraceDual.finrank_traceAnnihilator' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationTraceDual.lean:332:0: 'RelativeConicArcs.SupportOrientationTraceDual.finrank_traceAnnihilator' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationTraceDual.lean:331:0: 'RelativeConicArcs.PaperIOrientationTraceDual.det_crossGoldenBlock_eq_neg_supportCubic' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationTraceDual.lean:333:0: 'RelativeConicArcs.SupportOrientationTraceDual.det_crossGoldenBlock_eq_neg_supportCubic' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-⚠ [8808/8814] Replayed RelativeConicArcs.PaperIOrientationNodes
-warning: RelativeConicArcs/PaperIOrientationNodes.lean:209:6: This simp argument is unused:
+⚠ [8817/8823] Replayed RelativeConicArcs.SupportOrientationNodes
+warning: RelativeConicArcs/SupportOrientationNodes.lean:209:6: This simp argument is unused:
   Fin.sum_univ_succ
 
 Hint: Omit it from the simp argument list.
@@ -637,7 +672,7 @@ Hint: Omit it from the simp argument list.
   ̲  ̲ ̲ ̲ ̲ ̲centeredLift, GoldenCubicNodesBase.gradient, Function.update, F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵ ̵Polynomial.derivative_pow]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: RelativeConicArcs/PaperIOrientationNodes.lean:209:25: This simp argument is unused:
+warning: RelativeConicArcs/SupportOrientationNodes.lean:209:25: This simp argument is unused:
   Polynomial.derivative_pow
 
 Hint: Omit it from the simp argument list.
@@ -645,265 +680,257 @@ Hint: Omit it from the simp argument list.
   ̲  ̲ ̲ ̲ ̲ ̲centeredLift, GoldenCubicNodesBase.gradient, Function.update, F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵ ̵P̵o̵l̵y̵n̵o̵m̵i̵a̵l̵.̵d̵e̵r̵i̵v̵a̵t̵i̵v̵e̵_̵p̵o̵w̵]̵F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲]̲
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-info: RelativeConicArcs/PaperIOrientationNodes.lean:269:0: 'RelativeConicArcs.PaperIOrientationNodes.derivative_crossGoldenDeterminantLine_eval' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationNodes.lean:269:0: 'RelativeConicArcs.SupportOrientationNodes.derivative_crossGoldenDeterminantLine_eval' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationNodes.lean:270:0: 'RelativeConicArcs.PaperIOrientationNodes.singularPoints_crossGoldenDeterminant_eq_axisClasses' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationNodes.lean:270:0: 'RelativeConicArcs.SupportOrientationNodes.singularPoints_crossGoldenDeterminant_eq_axisClasses' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationNodes.lean:271:0: 'RelativeConicArcs.PaperIOrientationNodes.supportCubic_singularLocus_eq_frame' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationNodes.lean:271:0: 'RelativeConicArcs.SupportOrientationNodes.supportCubic_singularLocus_eq_frame' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationNodes.lean:272:0: 'RelativeConicArcs.PaperIOrientationNodes.supportCubic_framePoints_ordinaryNodes' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationNodes.lean:272:0: 'RelativeConicArcs.SupportOrientationNodes.supportCubic_framePoints_ordinaryNodes' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationNodes.lean:273:0: 'RelativeConicArcs.PaperIOrientationNodes.deletedPrincipalBlock_mulVec_incidentRow' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationNodes.lean:273:0: 'RelativeConicArcs.SupportOrientationNodes.deletedPrincipalBlock_mulVec_incidentRow' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationNodes.lean:274:0: 'RelativeConicArcs.PaperIOrientationNodes.deletedPrincipalBlock_sq' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationNodes.lean:274:0: 'RelativeConicArcs.SupportOrientationNodes.deletedPrincipalBlock_sq' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationNodes.lean:275:0: 'RelativeConicArcs.PaperIOrientationNodes.deletedPrincipalBlock_mulVec_eq_zero_iff' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationNodes.lean:275:0: 'RelativeConicArcs.SupportOrientationNodes.deletedPrincipalBlock_mulVec_eq_zero_iff' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationNodes.lean:276:0: 'RelativeConicArcs.PaperIOrientationNodes.finrank_deletedPrincipalBlock_range' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationNodes.lean:276:0: 'RelativeConicArcs.SupportOrientationNodes.finrank_deletedPrincipalBlock_range' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-⚠ [8809/8814] Replayed RelativeConicArcs.PaperIOrientationSymmetryCore
-warning: RelativeConicArcs/PaperIOrientationSymmetryCore.lean:127:43: This simp argument is unused:
+⚠ [8818/8823] Replayed RelativeConicArcs.SupportOrientationSymmetryCore
+warning: RelativeConicArcs/SupportOrientationSymmetryCore.lean:127:43: This simp argument is unused:
   hne
 
 Hint: Omit it from the simp argument list.
   simp_all [matchingIndex,̵ ̵h̵n̵e̵]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-info: RelativeConicArcs/PaperIOrientationSymmetryCore.lean:258:0: 'RelativeConicArcs.PaperIOrientationSymmetry.normalizesDistinguishedMatchings_iff_mem_normalizer' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationSymmetryCore.lean:258:0: 'RelativeConicArcs.SupportOrientationSymmetry.normalizesDistinguishedMatchings_iff_mem_normalizer' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationSymmetryCore.lean:259:0: 'RelativeConicArcs.PaperIOrientationSymmetry.matchingIndex_spec' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationSymmetryCore.lean:259:0: 'RelativeConicArcs.SupportOrientationSymmetry.matchingIndex_spec' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationSymmetryCore.lean:260:0: 'RelativeConicArcs.PaperIOrientationSymmetry.matchingAction_injective' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationSymmetryCore.lean:260:0: 'RelativeConicArcs.SupportOrientationSymmetry.matchingAction_injective' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationSymmetryCore.lean:261:0: 'RelativeConicArcs.PaperIOrientationSymmetry.supportCubicProjectiveStabilizer_card' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationSymmetryCore.lean:261:0: 'RelativeConicArcs.SupportOrientationSymmetry.supportCubicProjectiveStabilizer_card' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationSymmetryCore.lean:262:0: 'RelativeConicArcs.PaperIOrientationSymmetry.supportCubic_projectiveStabilizer_equiv_S5' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationSymmetryCore.lean:262:0: 'RelativeConicArcs.SupportOrientationSymmetry.supportCubic_projectiveStabilizer_equiv_S5' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8810/8814] Replayed RelativeConicArcs.PaperIOrientationSymmetryGenerators
-info: RelativeConicArcs/PaperIOrientationSymmetryGenerators.lean:408:0: 'RelativeConicArcs.PaperIOrientationSymmetry.matchingEvenGenerators_eq_alternating' depends on axioms: [propext,
+ℹ [8819/8823] Replayed RelativeConicArcs.SupportOrientationSymmetryGenerators
+info: RelativeConicArcs/SupportOrientationSymmetryGenerators.lean:408:0: 'RelativeConicArcs.SupportOrientationSymmetry.matchingEvenGenerators_eq_alternating' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationSymmetryGenerators.lean:409:0: 'RelativeConicArcs.PaperIOrientationSymmetry.preservesSupportSign_of_matchingSign_eq_one' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationSymmetryGenerators.lean:409:0: 'RelativeConicArcs.SupportOrientationSymmetry.preservesSupportSign_of_matchingSign_eq_one' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationSymmetryGenerators.lean:410:0: 'RelativeConicArcs.PaperIOrientationSymmetry.reversesSupportSign_of_matchingSign_eq_neg_one' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationSymmetryGenerators.lean:410:0: 'RelativeConicArcs.SupportOrientationSymmetry.reversesSupportSign_of_matchingSign_eq_neg_one' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationSymmetryGenerators.lean:411:0: 'RelativeConicArcs.PaperIOrientationSymmetry.supportCubicProjectiveStabilizer_eq_lineStabilizer' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationSymmetryGenerators.lean:411:0: 'RelativeConicArcs.SupportOrientationSymmetry.supportCubicProjectiveStabilizer_eq_lineStabilizer' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8811/8814] Replayed RelativeConicArcs.PaperIOrientationSymmetry
-info: RelativeConicArcs/PaperIOrientationSymmetry.lean:101:0: 'RelativeConicArcs.PaperIOrientationSymmetry.mem_supportCubicProjectiveStabilizer_iff_cubicLine' depends on axioms: [propext,
+ℹ [8820/8823] Replayed RelativeConicArcs.SupportOrientationSymmetry
+info: RelativeConicArcs/SupportOrientationSymmetry.lean:101:0: 'RelativeConicArcs.SupportOrientationSymmetry.mem_supportCubicProjectiveStabilizer_iff_cubicLine' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationSymmetry.lean:102:0: 'RelativeConicArcs.PaperIOrientationSymmetry.supportCubic_projectiveStabilizer_equiv_S5' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationSymmetry.lean:102:0: 'RelativeConicArcs.SupportOrientationSymmetry.supportCubic_projectiveStabilizer_equiv_S5' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationSymmetry.lean:103:0: 'RelativeConicArcs.PaperIOrientationSymmetry.mem_orientedSupportCubicStabilizer_iff' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationSymmetry.lean:103:0: 'RelativeConicArcs.SupportOrientationSymmetry.mem_orientedSupportCubicStabilizer_iff' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationSymmetry.lean:104:0: 'RelativeConicArcs.PaperIOrientationSymmetry.orientedSupportCubic_stabilizer_equiv_A5' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationSymmetry.lean:104:0: 'RelativeConicArcs.SupportOrientationSymmetry.orientedSupportCubic_stabilizer_equiv_A5' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationSymmetry.lean:105:0: 'RelativeConicArcs.PaperIOrientationSymmetry.orientedSupportCubic_index_two' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationSymmetry.lean:105:0: 'RelativeConicArcs.SupportOrientationSymmetry.orientedSupportCubic_index_two' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8812/8814] Replayed RelativeConicArcs.PaperIOrientationCommutant
-info: RelativeConicArcs/PaperIOrientationCommutant.lean:178:0: 'RelativeConicArcs.PaperIOrientationCommutant.oddModule_rationalCommutant_eq_adjoin_B' depends on axioms: [propext,
+ℹ [8821/8823] Replayed RelativeConicArcs.SupportOrientationCommutant
+info: RelativeConicArcs/SupportOrientationCommutant.lean:178:0: 'RelativeConicArcs.SupportOrientationCommutant.oddModule_rationalCommutant_eq_adjoinGoldenOperator' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationCommutant.lean:179:0: 'RelativeConicArcs.PaperIOrientationCommutant.oddA5ActionMatrix_one' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationCommutant.lean:179:0: 'RelativeConicArcs.SupportOrientationCommutant.oddA5ActionMatrix_one' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationCommutant.lean:180:0: 'RelativeConicArcs.PaperIOrientationCommutant.integralGoldenOperator_commutes_oddA5Action' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationCommutant.lean:180:0: 'RelativeConicArcs.SupportOrientationCommutant.integralGoldenOperator_commutes_oddA5Action' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationCommutant.lean:181:0: 'RelativeConicArcs.PaperIOrientationCommutant.rationalGoldenOperator_commutes_oddA5Action' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationCommutant.lean:181:0: 'RelativeConicArcs.SupportOrientationCommutant.rationalGoldenOperator_commutes_oddA5Action' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationCommutant.lean:182:0: 'RelativeConicArcs.PaperIOrientationCommutant.adjoinGolden_integralPoints_eq_ZsqrtFive' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationCommutant.lean:182:0: 'RelativeConicArcs.SupportOrientationCommutant.adjoinGolden_integralPoints_eq_ZsqrtFive' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/PaperIOrientationCommutant.lean:183:0: 'RelativeConicArcs.PaperIOrientationCommutant.oddLattice_integralCommutant_eq_ZsqrtFive' depends on axioms: [propext,
+info: RelativeConicArcs/SupportOrientationCommutant.lean:183:0: 'RelativeConicArcs.SupportOrientationCommutant.oddLattice_integralCommutant_eq_ZsqrtFive' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [8814/8814] Replayed RelativeConicArcs.Gates.ClebschRigidityTrust
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:39:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.point_orbit_partition' depends on axioms: [propext,
+ℹ [8823/8823] Built RelativeConicArcs.Gates.ClebschRigidityWithOrderElevenCertificates (2.7s)
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:55:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.point_orbit_partition' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:40:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.unique_six_orbit' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:56:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.unique_six_orbit' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:41:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.unique_twelve_orbit' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:57:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.unique_twelve_orbit' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:42:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.brianchon_points_one_orbit' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:58:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.brianchon_points_one_orbit' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:46:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.pointVec_eq_projectiveVec' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:62:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.pointVec_eq_projectiveVec' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:47:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.pointVec_witnessIndex' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:63:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.pointVec_witnessIndex' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:48:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.mem_standardConicIndices_iff' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:64:0: 'RelativeConicArcs.Examples.Q11A5PointOrbits.mem_standardConicIndices_iff' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:51:0: 'RelativeConicArcs.Examples.Q11Coding.witness_mds_columns' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:52:0: 'RelativeConicArcs.Examples.Q11Coding.projective_distanceThreeDirections_eq_standardConic' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:67:0: 'RelativeConicArcs.Examples.Q11Coding.witness_mds_columns' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:68:0: 'RelativeConicArcs.Examples.Q11Coding.projective_distanceThreeDirections_eq_standardConic' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:53:0: 'RelativeConicArcs.Examples.Q11Coding.witness_code_coveringRadius_three' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:69:0: 'RelativeConicArcs.Examples.Q11Coding.witness_code_coveringRadius_three' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:56:0: 'RelativeConicArcs.Examples.Q11Coding.totalSyndromeDistance_exact' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:72:0: 'RelativeConicArcs.Examples.Q11Coding.totalSyndromeDistance_exact' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:57:0: 'RelativeConicArcs.Examples.Q11Coding.ambiguity_strata_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:58:0: 'RelativeConicArcs.Examples.Q11Coding.ambiguity_strata_counts' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:73:0: 'RelativeConicArcs.Examples.Q11Coding.ambiguity_strata_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:74:0: 'RelativeConicArcs.Examples.Q11Coding.ambiguity_strata_counts' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:59:0: 'RelativeConicArcs.Examples.Q11Coding.brianchonDirectionIndices_eq_indexThree' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:75:0: 'RelativeConicArcs.Examples.Q11Coding.brianchonDirectionIndices_eq_indexThree' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:60:0: 'RelativeConicArcs.Examples.Q11Coding.brianchon_weightTwo_leaderSupports' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:76:0: 'RelativeConicArcs.Examples.Q11Coding.brianchon_weightTwo_leaderSupports' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:63:0: 'RelativeConicArcs.ClebschDye.sixArc_uncovered_add_brianchon_card' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:79:0: 'RelativeConicArcs.ClebschDye.sixArc_uncovered_add_brianchon_card' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:64:0: 'RelativeConicArcs.ClebschDye.sixArc_twelve_le_uncovered_card' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:80:0: 'RelativeConicArcs.ClebschDye.sixArc_twelve_le_uncovered_card' depends on axioms: [propext,
  Classical.choice,
- Quot.sound,
- RelativeConicArcs.ClebschDye.dye1991_brianchon_bound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:65:0: 'RelativeConicArcs.ClebschDye.sixArc_cards_of_uncovered_subset_conic' depends on axioms: [propext,
+ Quot.sound]
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:81:0: 'RelativeConicArcs.ClebschDye.sixArc_cards_of_uncovered_subset_conic' depends on axioms: [propext,
  Classical.choice,
- Quot.sound,
- RelativeConicArcs.ClebschDye.dye1991_brianchon_bound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:66:0: 'RelativeConicArcs.ClebschDye.isClebschHexagon_of_uncovered_subset_conic' depends on axioms: [propext,
+ Quot.sound]
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:82:0: 'RelativeConicArcs.ClebschDye.isClebschHexagon_of_uncovered_subset_conic' depends on axioms: [propext,
  Classical.choice,
- Quot.sound,
- RelativeConicArcs.ClebschDye.dye1991_brianchon_bound,
- RelativeConicArcs.ClebschDye.dye1991_equality_classification]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:69:0: 'RelativeConicArcs.OddSixArcPrismExtraction.sixArc_uncoveredOnLine_card_le_order_sub_five' depends on axioms: [propext,
+ Quot.sound]
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:85:0: 'RelativeConicArcs.OddSixArcPrismExtraction.sixArc_uncoveredOnLine_card_le_order_sub_five' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:70:0: 'RelativeConicArcs.ClebschDye.sixArc_uncovered_card_le_twelve_of_subset_planeQuadraticLocus' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:86:0: 'RelativeConicArcs.ClebschDye.sixArc_uncovered_card_le_twelve_of_subset_planeQuadraticLocus' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:71:0: 'RelativeConicArcs.ClebschDye.isClebschHexagon_of_uncovered_subset_planeConic' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:87:0: 'RelativeConicArcs.ClebschDye.isClebschHexagon_of_uncovered_subset_planeConic' depends on axioms: [propext,
  Classical.choice,
- Quot.sound,
- RelativeConicArcs.ClebschDye.dye1991_brianchon_bound,
- RelativeConicArcs.ClebschDye.dye1991_equality_classification]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:72:0: 'RelativeConicArcs.ClebschDye.deepHoleLocus_rigidifies_witnessCode' depends on axioms: [propext,
+ Quot.sound]
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:88:0: 'RelativeConicArcs.ClebschDye.deepHoleLocus_rigidifies_witnessCode' depends on axioms: [propext,
  Classical.choice,
- Quot.sound,
- RelativeConicArcs.ClebschDye.dye1991_brianchon_bound,
- RelativeConicArcs.ClebschDye.dye1991_equality_classification]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:75:0: 'RelativeConicArcs.ClebschChordDefect.chordDefect_identity_of_moments' depends on axioms: [propext,
+ Quot.sound]
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:91:0: 'RelativeConicArcs.ClebschChordDefect.chordDefect_identity_of_moments' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:76:0: 'RelativeConicArcs.ClebschChordDefect.clebsch_uncovered_formula' depends on axioms: [propext]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:77:0: 'RelativeConicArcs.ClebschChordDefect.orders_of_clebsch_uncovered_conic_card' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:92:0: 'RelativeConicArcs.ClebschChordDefect.clebsch_uncovered_formula' depends on axioms: [propext]
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:93:0: 'RelativeConicArcs.ClebschChordDefect.orders_of_clebsch_uncovered_conic_card' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:78:0: 'RelativeConicArcs.Q9Sylvester.distanceTwo_clique_number_five' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:94:0: 'RelativeConicArcs.Q9Sylvester.distanceTwo_clique_number_five' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:81:0: 'RelativeConicArcs.SmallKGeometricBridge.fourArc_uncovered_card' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:97:0: 'RelativeConicArcs.SmallKGeometricBridge.fourArc_uncovered_card' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:82:0: 'RelativeConicArcs.SmallKGeometricBridge.fourArc_conic_card_order' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:98:0: 'RelativeConicArcs.SmallKGeometricBridge.fourArc_conic_card_order' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:83:0: 'RelativeConicArcs.SmallKGeometricBridge.fiveArc_not_conic_card' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:99:0: 'RelativeConicArcs.SmallKGeometricBridge.fiveArc_not_conic_card' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:84:0: 'RelativeConicArcs.SmallKGeometricBridge.sevenArc_primePower_conic_card_spectra' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:100:0: 'RelativeConicArcs.SmallKGeometricBridge.sevenArc_primePower_conic_card_spectra' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:87:0: 'RelativeConicArcs.PaperIOrientationSymmetry.mem_supportCubicProjectiveStabilizer_iff_cubicLine' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:103:0: 'RelativeConicArcs.SupportOrientationSymmetry.mem_supportCubicProjectiveStabilizer_iff_cubicLine' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:88:0: 'RelativeConicArcs.PaperIOrientationSymmetry.supportCubic_projectiveStabilizer_equiv_S5' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:104:0: 'RelativeConicArcs.SupportOrientationSymmetry.supportCubic_projectiveStabilizer_equiv_S5' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:89:0: 'RelativeConicArcs.PaperIOrientationSymmetry.mem_orientedSupportCubicStabilizer_iff' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:105:0: 'RelativeConicArcs.SupportOrientationSymmetry.mem_orientedSupportCubicStabilizer_iff' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:90:0: 'RelativeConicArcs.PaperIOrientationSymmetry.orientedSupportCubic_stabilizer_equiv_A5' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:106:0: 'RelativeConicArcs.SupportOrientationSymmetry.orientedSupportCubic_stabilizer_equiv_A5' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:91:0: 'RelativeConicArcs.PaperIOrientationSymmetry.orientedSupportCubic_index_two' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:107:0: 'RelativeConicArcs.SupportOrientationSymmetry.orientedSupportCubic_index_two' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:94:0: 'RelativeConicArcs.PaperIOrientationCover.antipodalQuotient_fiber_card_two' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:110:0: 'RelativeConicArcs.SupportOrientationCover.antipodalQuotient_fiber_card_two' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:95:0: 'RelativeConicArcs.PaperIOrientationCover.fiveOrbitals_selfPaired' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:111:0: 'RelativeConicArcs.SupportOrientationCover.fiveOrbitals_selfPaired' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:96:0: 'RelativeConicArcs.PaperIOrientationCover.fiveOrbital_one_mem_each_other_fiber' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:112:0: 'RelativeConicArcs.SupportOrientationCover.fiveOrbital_one_mem_each_other_fiber' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:97:0: 'RelativeConicArcs.PaperIOrientationPentagon.signedOrbitalMatrix_sq' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:113:0: 'RelativeConicArcs.SupportOrientationPentagon.signedOrbitalMatrix_sq' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:98:0: 'RelativeConicArcs.PaperIOrientationPentagon.orbitalDifference_sq_eq_ten_one_sub_deck' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:114:0: 'RelativeConicArcs.SupportOrientationPentagon.orbitalDifference_sq_eq_ten_one_sub_deck' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:101:0: 'RelativeConicArcs.PaperIOrientationHolonomy.supportSign_eq_triangleProduct' depends on axioms: [propext, Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:102:0: 'RelativeConicArcs.PaperIOrientationHolonomy.fourPoint_twoGraph_identity' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:117:0: 'RelativeConicArcs.SupportOrientationHolonomy.supportSign_eq_triangleProduct' depends on axioms: [propext, Quot.sound]
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:118:0: 'RelativeConicArcs.SupportOrientationHolonomy.fourPoint_twoGraph_identity' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:103:0: 'RelativeConicArcs.PaperIOrientationHolonomy.pairBalance_iff_sq_five' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:119:0: 'RelativeConicArcs.SupportOrientationHolonomy.pairBalance_iff_sq_five' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:104:0: 'RelativeConicArcs.PaperIOrientationHolonomy.supportCubic_translation_invariant' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:120:0: 'RelativeConicArcs.SupportOrientationHolonomy.supportCubic_translation_invariant' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:105:0: 'RelativeConicArcs.PaperIOrientationDeterminant.det_signedOrbital_add_diagonal' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:121:0: 'RelativeConicArcs.SupportOrientationDeterminant.det_signedOrbital_add_diagonal' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:106:0: 'RelativeConicArcs.PaperIOrientationDeterminant.determinantPencil_oddPart_eq_supportCubic' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:122:0: 'RelativeConicArcs.SupportOrientationDeterminant.determinantPencil_oddPart_eq_supportCubic' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:109:0: 'RelativeConicArcs.PaperIOrientationTraceDual.det_crossGoldenBlock_eq_neg_supportCubic' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:125:0: 'RelativeConicArcs.SupportOrientationTraceDual.det_crossGoldenBlock_eq_neg_supportCubic' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:110:0: 'RelativeConicArcs.PaperIOrientationNodes.derivative_crossGoldenDeterminantLine_eval' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:126:0: 'RelativeConicArcs.SupportOrientationNodes.derivative_crossGoldenDeterminantLine_eval' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:111:0: 'RelativeConicArcs.PaperIOrientationNodes.singularPoints_crossGoldenDeterminant_eq_axisClasses' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:127:0: 'RelativeConicArcs.SupportOrientationNodes.singularPoints_crossGoldenDeterminant_eq_axisClasses' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:112:0: 'RelativeConicArcs.PaperIOrientationNodes.supportCubic_singularLocus_eq_frame' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:128:0: 'RelativeConicArcs.SupportOrientationNodes.supportCubic_singularLocus_eq_frame' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:113:0: 'RelativeConicArcs.PaperIOrientationNodes.supportCubic_framePoints_ordinaryNodes' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:129:0: 'RelativeConicArcs.SupportOrientationNodes.supportCubic_framePoints_ordinaryNodes' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:116:0: 'RelativeConicArcs.PaperIOrientationCommutant.oddModule_rationalCommutant_eq_adjoin_B' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:132:0: 'RelativeConicArcs.SupportOrientationCommutant.oddModule_rationalCommutant_eq_adjoinGoldenOperator' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:117:0: 'RelativeConicArcs.PaperIOrientationCommutant.adjoinGolden_integralPoints_eq_ZsqrtFive' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:133:0: 'RelativeConicArcs.SupportOrientationCommutant.adjoinGolden_integralPoints_eq_ZsqrtFive' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-info: RelativeConicArcs/Gates/ClebschRigidityTrust.lean:118:0: 'RelativeConicArcs.PaperIOrientationCommutant.oddLattice_integralCommutant_eq_ZsqrtFive' depends on axioms: [propext,
+info: RelativeConicArcs/Gates/ClebschRigidityWithOrderElevenCertificates.lean:134:0: 'RelativeConicArcs.SupportOrientationCommutant.oddLattice_integralCommutant_eq_ZsqrtFive' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-All targets up-to-date (8814 jobs).
+Build completed successfully (8823 jobs).

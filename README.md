@@ -3,22 +3,27 @@
 Generated and finite-checking Lean 4 modules for the order-11 portion of the
 Clebsch rigidity formalization. This repository depends one way on
 [`finitegeom`](https://github.com/tavisrudd/finitegeom), pinned at commit
-`85dfde9e13e6c3d004e0e659fb83c1a4761902d0`.
+`dca9ce75225685f79a81e0be24927ba6852e1c09`.
 
-The package contains 121 Lean modules not supplied by the pinned dependency.
+The package contains the Lean modules not supplied by the pinned dependency.
 They encode and check the order-sixty action, its point orbits, the code–arc
 dictionary, exact decoder tables, and the order-11 rigidity consequences.
-Human-scale chord-defect, small-field, and eight-packet orientation arguments
-remain in `finitegeom`.  The final commutant theorems use the explicit
-classical conjugate `3+3'` Schur--Galois interface recorded by the Paper I
-trust manifest; golden equivariance and integral descent are kernel checked.
+Human-scale chord-defect, small-field, rigidity-spine and eight-packet
+orientation arguments remain in `finitegeom`.  The final commutant theorems
+are conditional on a proposition-valued statement of the classical conjugate
+`3+3'` Schur--Galois splitting, which the gate prints; golden equivariance and
+integral descent are kernel checked.
 
 The import-only boundary is
-`RelativeConicArcs.Gates.ClebschRigidityTrust`. Its rigidity conclusion uses
-the ten-point Brianchon bound and equality classification from R. H. Dye,
+`RelativeConicArcs.Gates.ClebschRigidityWithOrderElevenCertificates`, which
+covers the rigidity development together with the order-eleven certificates
+that instantiate it.  Nothing in the rigidity chain is assumed from the
+literature: the ten-point Brianchon bound and the equality classification are
+theorems of the pinned dependency.  They formalize results of R. H. Dye,
 “Hexagons, conics, A5 and PSL2(K),” *Journal of the London Mathematical
-Society* (2) 44 (1991), Section 2.2 and Theorem 1(ii), page 275,
-<https://doi.org/10.1112/jlms/s2-44.2.270>.
+Society* (2) 44 (1991), Theorems 1 and 3, pages 275–278,
+<https://doi.org/10.1112/jlms/s2-44.2.270>, which is where the classical
+statements appear.
 `MANIFEST.json` content-addresses every Lean module and the generator.
 
 ## Build
@@ -31,11 +36,11 @@ lake build ClebschQ11Certificates
 ```
 
 The pinned `finitegeom` commit must be available from its public Git remote.
-The aggregate Paper I gate is
-`RelativeConicArcs.Gates.ClebschRigidityTrust`.  Its target diagnostics are
-recorded in
-`verification/clebsch_rigidity_trust/axiom-audit.txt`; the audit includes the
-`#print axioms` result for every paper-facing terminal imported by the gate.
+Building `RelativeConicArcs.Gates.ClebschRigidityWithOrderElevenCertificates`
+records its target diagnostics in
+`verification/clebsch_rigidity_trust/axiom-audit.txt`; the audit gives the
+`#print axioms` result for every terminal the gate imports, both those this
+package proves and those it takes from the pinned dependency.
 
 ## Verify generated orbit data
 
